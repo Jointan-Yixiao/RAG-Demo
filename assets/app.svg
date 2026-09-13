@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <title>RAG 资料问答工作台</title>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="#1D232A"/>
+  <path d="M44 112c0-37 30-67 67-67h58c-20-17-45-25-71-20-29 6-50 29-54 58z" fill="#303A44"/>
+  <rect x="53" y="64" width="97" height="130" rx="15" transform="rotate(-9 102 129)" fill="#8D9BA8"/>
+  <path d="M94 43h56l38 38v92c0 10-8 18-18 18H94c-10 0-18-8-18-18V61c0-10 8-18 18-18z" fill="#F8FAFC"/>
+  <path d="M150 43v24c0 8 6 14 14 14h24z" fill="#CCD5DE"/>
+  <path d="M101 101h48M101 124h32M101 147h17" fill="none" stroke="#586775" stroke-width="10" stroke-linecap="round"/>
+  <path d="M182 184l27 27" fill="none" stroke="#1D232A" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="160" cy="162" r="34" fill="#1D232A" stroke="#1D232A" stroke-width="13"/>
+  <circle cx="160" cy="162" r="29" fill="#263B36" stroke="#7BE0B3" stroke-width="11"/>
+  <path d="M181 183l24 24" fill="none" stroke="#7BE0B3" stroke-width="12" stroke-linecap="round"/>
+  <path d="M149 162l8 8 15-17" fill="none" stroke="#ECFFF7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

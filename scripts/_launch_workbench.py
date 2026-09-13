@@ -1,5 +1,6 @@
 """Double-click launcher for the local workbench (no administrator rights)."""
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -15,7 +16,9 @@ ROOT=Path(__file__).resolve().parents[1]
 def healthy(url):
     try:
         with urlopen(url+'/api/health',timeout=1) as response:
-            return json.loads(response.read()).get('service')=='rag-workbench'
+            health=json.loads(response.read())
+            identity=hashlib.sha256(str(ROOT.resolve()).rstrip('\\/').lower().encode('utf-8')).hexdigest()[:16]
+            return health.get('service')=='rag-workbench' and health.get('workspace_id')==identity
     except Exception:
         return False
 

@@ -319,7 +319,8 @@ class Workbench:
     def health(self):
         model = self.bge_model_dir
         ready = (self.index_dir/'manifest.json').is_file() and (model/'model.safetensors').is_file() and bool(shutil.which('node'))
-        return dict(service='rag-workbench',ready=ready,busy=self.process is not None or not self.queue.empty(),
+        identity=hashlib.sha256(str(self.root).rstrip('\\/').lower().encode('utf-8')).hexdigest()[:16]
+        return dict(service='rag-workbench',workspace_id=identity,ready=ready,busy=self.process is not None or self.queue.unfinished_tasks > 0 or self.testing.locked(),
                     message='本地资料已就绪' if ready else '缺少本地索引、重排模型或 Node.js，请查看启动说明。')
 
     def job_dir(self, job_id):
@@ -358,6 +359,8 @@ class Workbench:
         if request_id is not None and not re.fullmatch(r'[0-9a-f]{32}',request_id):
             raise UIError('提交标识无效，请刷新页面后重试。')
         with self.lock:
+            if self.stop.is_set():
+                raise UIError('工作台正在停止，请重新启动后再提问。',503)
             if request_id:
                 for path in self.jobs.glob('*/job.json'):
                     previous = read_json(path)
@@ -524,6 +527,10 @@ class Handler(BaseHTTPRequestHandler):
                 if path=='/api/history':return self.send(app.history())
                 if path=='/api/settings':return self.send(app.settings.public())
                 if path=='/api/documents':return self.send(app.documents())
+                if path=='/favicon.ico':
+                    icon=app.root/'assets/app.ico'
+                    if not icon.is_file():raise UIError('图标尚未安装。',404)
+                    return self.send(icon.read_bytes(),content_type='image/x-icon')
                 if path.startswith('/api/documents/'):
                     return self.send(app.document(path.removeprefix('/api/documents/')))
                 match = re.fullmatch(r'/api/questions/([0-9a-f]{32})(?:/evidence/(S\d+)/image)?',path)
@@ -555,6 +562,9 @@ class Handler(BaseHTTPRequestHandler):
                     finally:app.testing.release()
                 if self.command=='POST' and path=='/api/shutdown':
                     if body:raise UIError('停止请求格式不正确。')
+                    with app.lock:
+                        if app.health()['busy']:raise UIError('问题仍在处理中，请等待完成后停止服务。',409)
+                        app.stop.set()
                     self.send({'ok':True,'message':'正在停止本机工作台。'})
                     threading.Thread(target=self.server.shutdown,daemon=True).start()
                     return

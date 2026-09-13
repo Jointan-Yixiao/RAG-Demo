@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-09-13T05:34:09.250048+00:00",
+  "created_at_utc": "2026-09-13T06:08:07.650403+00:00",
   "excluded_by_design": [
     ".env and any credential",
     ".venv / site-packages",
@@ -177,8 +177,8 @@
     {
       "path": "scripts/_prepare_delivery.py",
       "role": "code",
-      "bytes": 14200,
-      "sha256": "b14de7f14ce5e46ffbea7abafbf1f61eff7b0ee523533e59da0312d99d288b3b"
+      "bytes": 14505,
+      "sha256": "90487b10993cf0face76c736b870d96691d10fc6dbc42971fb012c6c7855e170"
     },
     {
       "path": "scripts/_chunk_corpus.py",
@@ -195,8 +195,8 @@
     {
       "path": "scripts/_rag_web.py",
       "role": "code",
-      "bytes": 31383,
-      "sha256": "daa1140c9eec5ece1fdbc97308bfd34d53f16087dcf99d5012936c3c9c79b158"
+      "bytes": 32131,
+      "sha256": "6d92aa8e2a5a8699c9f244baf08682890191f92c7382f434baa52ebec38463b2"
     },
     {
       "path": "scripts/_rag_web_worker.py",
@@ -207,14 +207,20 @@
     {
       "path": "scripts/_launch_workbench.py",
       "role": "code",
-      "bytes": 2092,
-      "sha256": "ce1228852149a3a99e89f1f117cf4cc0c4c6ab1973222b27070b98f4d31bb46a"
+      "bytes": 2286,
+      "sha256": "76a958ae75f84e228cdaedcbfd09f3c1d23d5a52e0fef34eb2edff2391f82e2f"
     },
     {
       "path": "scripts/_verify_workbench_http.py",
       "role": "code",
       "bytes": 3611,
       "sha256": "df7ba46b4fbde822ba48cd1faa5423b6cb1fa029f7a9692ef13d586263494f30"
+    },
+    {
+      "path": "scripts/_install_workbench.py",
+      "role": "code",
+      "bytes": 12194,
+      "sha256": "26290022301db1947982a6be51d94c18e331679c3fdabc79a1718ea5022ef320"
     },
     {
       "path": "scripts/_grok_concept_linker.mjs",
@@ -1303,10 +1309,64 @@
       "sha256": "23f56e4c5c753cbdba951d4c1d04ce41ee53ab8ba9f1080d07bdd7879af9358f"
     },
     {
+      "path": "RAG-Workbench.exe",
+      "role": "release-doc-or-test",
+      "bytes": 73216,
+      "sha256": "9a0ba6c46ab7ed167c299272402e805b7c24396d1acdca0d8d26b47179f83a29"
+    },
+    {
+      "path": "launcher/WorkbenchLauncher.cs",
+      "role": "release-doc-or-test",
+      "bytes": 90025,
+      "sha256": "de8291d765b2592a272bb22896adb1cc23fcedbb9e1d7db9cc9517ea7db27f81"
+    },
+    {
+      "path": "scripts/_build_launcher.ps1",
+      "role": "release-doc-or-test",
+      "bytes": 3316,
+      "sha256": "1b6c9440ecb2acbfaa561e5a0cac35455f40bbdc244610995d8551417d574f34"
+    },
+    {
+      "path": "tests/launcher/LauncherTests.cs",
+      "role": "release-doc-or-test",
+      "bytes": 31603,
+      "sha256": "f72040412608853f5ef4506009ac1558005277f386e914e3eb4c6a6491024941"
+    },
+    {
+      "path": "tests/test_launcher_setup.py",
+      "role": "release-doc-or-test",
+      "bytes": 5429,
+      "sha256": "2c646d13eb748a3ad23a63f2946e71f00622c752424707e663f4e2c69bfd83cc"
+    },
+    {
+      "path": "doc/启动器实现说明.md",
+      "role": "release-doc-or-test",
+      "bytes": 6550,
+      "sha256": "8b005d14036bfbcbefe777c5e4a67ca48dc4d5dfcbe89b64d9069f587fd058c5"
+    },
+    {
+      "path": "assets/app.svg",
+      "role": "release-doc-or-test",
+      "bytes": 1183,
+      "sha256": "d2b10dc26ad460350695092189c7ca10c846cd3be4bff463012b477fdeaab65a"
+    },
+    {
+      "path": "assets/app.png",
+      "role": "release-doc-or-test",
+      "bytes": 23008,
+      "sha256": "fb057fc13f1865c7a2670c073108e230e774d00b0c1063221b69dd8bfb9385d9"
+    },
+    {
+      "path": "assets/app.ico",
+      "role": "release-doc-or-test",
+      "bytes": 21651,
+      "sha256": "fff977638cbc0bda013ce24ebe9bcab2308f8409032d03ca6293b315728e69b6"
+    },
+    {
       "path": "README.md",
       "role": "release-doc-or-test",
-      "bytes": 15045,
-      "sha256": "8cb64a6298b2897f5aa0b89c27c8c8ce0842ac4f43b2d82fb4621a6aa2153810"
+      "bytes": 17504,
+      "sha256": "5c431795f841462d1bcbce3bf2795f1530da1028552cf25a43fbadd0150d6fec"
     },
     {
       "path": ".gitignore",
@@ -1353,8 +1413,8 @@
     {
       "path": "doc/安装与复现.md",
       "role": "release-doc-or-test",
-      "bytes": 12418,
-      "sha256": "97b5dc0f4df70e91a21657351e9e3bc724555d90c550dab91afa0e6615eb3e98"
+      "bytes": 12867,
+      "sha256": "b620a48a628a871146830bcea361919a4b547d37a5a05bf1fe2f620d9361c69f"
     },
     {
       "path": "doc/验证结果.md",
@@ -1371,14 +1431,14 @@
     {
       "path": "tests/test_rag_web.py",
       "role": "release-doc-or-test",
-      "bytes": 16432,
-      "sha256": "c79d8912bfbfd4c4f106cee2e860b46ce2bf0c354dfb30f942cd2fa0e69acbe7"
+      "bytes": 17840,
+      "sha256": "3fd2bc410951563e7410439fbfe2958d82fc64c1813458d45046efbb014e8aac"
     },
     {
       "path": "web/index.html",
       "role": "release-doc-or-test",
-      "bytes": 12555,
-      "sha256": "95a29bf34edb48ea537b58c1c7e0314ad91436543f744cccb734b62c960ff543"
+      "bytes": 12615,
+      "sha256": "4cb9f2087181d613ebe65f7de42ab6a5f8de4c6861ec198ed7828ecc0394d7ec"
     },
     {
       "path": "web/styles.css",
@@ -1395,8 +1455,8 @@
     {
       "path": "启动工作台.cmd",
       "role": "release-doc-or-test",
-      "bytes": 251,
-      "sha256": "ea5fb5085602cf583e92b1fd4d59708523be9a95a254dedc3d061b4af4da1198"
+      "bytes": 189,
+      "sha256": "ce6c0389eee322ba8facc09bd4e78503d772c3cbeeaeb5be3caccad2966181e9"
     },
     {
       "path": "停止工作台.cmd",
@@ -1413,8 +1473,8 @@
     {
       "path": "doc/UI-本地工作台接入.md",
       "role": "release-doc-or-test",
-      "bytes": 6014,
-      "sha256": "3650e781559bee5bc1524107f0a954ac1541e97405a573d904c5b7bda12db762"
+      "bytes": 5917,
+      "sha256": "3cacdf1fbc59a1490ffa2a78fb97d1981866537483852d6ea7971ee70297991f"
     },
     {
       "path": "doc/RAG-实时端到端运行说明.md",
@@ -1438,7 +1498,7 @@
   "missing": [],
   "refused": [],
   "counts": {
-    "files": 237,
-    "bytes": 15426559
+    "files": 247,
+    "bytes": 15700198
   }
 }

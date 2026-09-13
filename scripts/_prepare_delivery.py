@@ -42,7 +42,7 @@ RUNTIME_PY = [
     # E41 rebuild path and the historical chunkers it runs in memory
     "_runtime_bundle.py", "_rebuild_runtime.py", "_prepare_delivery.py",
     "_chunk_corpus.py", "_migrate_chunks_v2.py",
-    "_rag_web.py", "_rag_web_worker.py", "_launch_workbench.py", "_verify_workbench_http.py",
+    "_rag_web.py", "_rag_web_worker.py", "_launch_workbench.py", "_verify_workbench_http.py", "_install_workbench.py",
 ]
 EXPERIMENT_CODE = [
     "data/metadata/retrieval-eval/experiment-16-overlap-split/build_split_index.py",
@@ -65,6 +65,9 @@ RELEASE_INPUTS = [
     f"{E41}/release-inputs/provenance.json",
 ]
 TOP_LEVEL = [
+    "RAG-Workbench.exe", "launcher/WorkbenchLauncher.cs", "scripts/_build_launcher.ps1",
+    "tests/launcher/LauncherTests.cs", "tests/test_launcher_setup.py", "doc/启动器实现说明.md",
+    "assets/app.svg", "assets/app.png", "assets/app.ico",
     "README.md", ".gitignore", ".env.example", "requirements-runtime.txt", "requirements-runtime-lock.txt",
     ".gitattributes", "SOURCES.md", "examples/questions.json",
     "doc/安装与复现.md", "doc/验证结果.md",
@@ -210,7 +213,7 @@ def cmd_export(args) -> int:
 
 RUNTIME_IMPORTS = ["_rag_e2e", "_rebuild_runtime", "_runtime_bundle", "_hybrid_retrieval",
                    "_answer_semantics", "_chunk_corpus", "_migrate_chunks_v2", "_user_response",
-                   "_rag_web", "_rag_web_worker", "_launch_workbench"]
+                   "_rag_web", "_rag_web_worker", "_launch_workbench", "_install_workbench"]
 
 
 def cmd_check(args) -> int:

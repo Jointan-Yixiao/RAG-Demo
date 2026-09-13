@@ -281,6 +281,34 @@ class HTTPBoundaries(Fixture):
         self.assertEqual(self.request('/api/documents/paper')[0],200)
         self.assertEqual(self.request('/api/documents/../../.env')[0],404)
 
+    def test_stop_blocks_new_question_without_creating_job(self):
+        self.app.stop.set()
+        self.assertEqual(self.request('/api/questions',{'query':'Late question'},'POST')[0],503)
+        self.assertEqual(list(self.app.jobs.iterdir()),[])
+
+    def test_dequeued_job_remains_busy_until_completed(self):
+        self.app.queue.put_nowait(('job','synthetic-key'))
+        self.app.queue.get_nowait()
+        self.assertTrue(self.app.health()['busy'])
+        self.app.queue.task_done()
+        self.assertFalse(self.app.health()['busy'])
+
+    def test_health_identifies_this_workspace(self):
+        status,body,_=self.request('/api/health')
+        expected=hashlib.sha256(str(self.root.resolve()).rstrip('\\/').lower().encode('utf-8')).hexdigest()[:16]
+        self.assertEqual(status,200)
+        self.assertEqual(json.loads(body)['workspace_id'],expected)
+
+    def test_favicon_is_explicitly_served_without_exposing_assets_directory(self):
+        (self.root/'assets').mkdir()
+        (self.root/'assets/app.ico').write_bytes(b'icon-fixture')
+        self.assertEqual(self.request('/favicon.ico')[1],b'icon-fixture')
+        self.assertEqual(self.request('/assets/app.ico')[0],404)
+
+    def test_shutdown_refuses_active_jobs(self):
+        with patch.object(self.app,'health',return_value={'ready':True,'busy':True}):
+            self.assertEqual(self.request('/api/shutdown',{},'POST')[0],409)
+
     def test_http_submit_poll_preferences_and_missing_resources(self):
         with patch.object(self.app,'health',return_value={'ready':True}):
             status,body,_=self.request('/api/questions',{'query':'A new question'},'POST')
