@@ -1,0 +1,1 @@
+来源：pinecone/rerankers-two-stage-retrieval.md（Pinecone Rerankers and Two-Stage Retrieval）；定位：原文出现顺序001，图01；图表主题：长上下文中的Lost in the Middle现象。检索描述：折线图展示GPT-3.5-turbo的目标信息召回或回答准确率随相关文档在上下文中的位置变化：开头和结尾表现较高，中间位置明显下降，并给出约56%的无上下文基线。检索关键词：Lost in the Middle, 长上下文, GPT-3.5-turbo, 文档位置, 召回率, 准确率。

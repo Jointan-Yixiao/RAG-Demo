@@ -1,0 +1,1 @@
+来源：pinecone/rerankers-two-stage-retrieval.md（Pinecone Rerankers and Two-Stage Retrieval）；定位：原文出现顺序004，图04；图表主题：Cross-Encoder交叉编码重排器。检索描述：查询与候选文档被拼接后共同输入Transformer，模型直接输出单个相关性分数；计算成本较高但能利用查询与文档的细粒度交互提升重排质量。检索关键词：Cross-Encoder, 交叉编码器, Reranker, Transformer, 相关性分数, 精排。

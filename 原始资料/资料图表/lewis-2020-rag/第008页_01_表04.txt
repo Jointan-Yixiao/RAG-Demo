@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第8页，页面内出现顺序01，表04；图表主题：Jeopardy问题生成的人类评估。检索描述：给出BART与RAG在事实性和具体性上的人工偏好比例；RAG在事实性与具体性上分别获得42.7%和37.4%的更优判断，并报告双方都好、都差及无多数意见的情况。检索关键词：人类评估, 事实性, 具体性, Jeopardy, BART, RAG。

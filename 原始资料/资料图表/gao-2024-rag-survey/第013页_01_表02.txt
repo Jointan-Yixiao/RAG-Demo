@@ -1,0 +1,1 @@
+来源：papers/gao-2024-rag-survey.pdf（Retrieval-Augmented Generation for Large Language Models: A Survey）；定位：原文第13页，页面内出现顺序01，表02；图表主题：RAG下游任务、数据集与方法。检索描述：按任务类型汇总RAG的典型数据集和参考方法，覆盖单跳、多跳、长文本、领域及图问答，对话、推荐、信息抽取、推理、摘要、分类、代码搜索、鲁棒性、数学和翻译等场景，包括WikiASP、XSum、SST-2、TREC、CodeSearchNet、NoMIRACL。检索关键词：RAG下游任务, 数据集, 问答, 对话, 推荐, 推理, 摘要, 代码搜索, WikiASP, XSum, SST-2, 文本分类, 鲁棒性。

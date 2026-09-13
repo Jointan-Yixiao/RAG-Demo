@@ -1,0 +1,1 @@
+来源：papers/gao-2024-rag-survey.pdf（Retrieval-Augmented Generation for Large Language Models: A Survey）；定位：原文第7页，页面内出现顺序01，图04；图表主题：RAG、提示工程与微调的定位关系。检索描述：以是否需要外部知识和是否需要模型适配为两个维度，对提示工程、朴素RAG、高级RAG、模块化RAG与微调进行象限定位，体现不同方案在知识注入和参数调整上的差异。检索关键词：RAG, 提示工程, 微调, 外部知识, 模型适配, 技术选型。

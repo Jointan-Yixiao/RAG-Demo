@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第8页，页面内出现顺序04，图03；图表主题：检索文档数量K对性能的影响。检索描述：三幅折线图展示随检索文档数K增加，Natural Questions的Exact Match与答案Recall@K，以及MS MARCO的BLEU-1和ROUGE-L如何变化，并比较RAG、固定DPR和BM25。检索关键词：检索数量K, Exact Match, Recall@K, BLEU-1, ROUGE-L, DPR, BM25, 性能饱和。

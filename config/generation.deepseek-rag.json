@@ -1,0 +1,29 @@
+{
+  "profile": "deepseek-flash-rag-low-thinking",
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "max_output_tokens": 16384,
+  "max_input_utf8_bytes": 131072,
+  "timeout_seconds": 120,
+  "extra_body": {
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "low"
+  },
+  "docs": {
+    "api_overview": "https://api-docs.deepseek.com/",
+    "thinking_mode": "https://api-docs.deepseek.com/guides/thinking_mode/",
+    "opened_on": "2026-09-12"
+  },
+  "notes": {
+    "model": "deepseek-flash is the model id recommended by the official docs; the older deepseek-v4-flash names are aliases of it.",
+    "base_url": "The adapter appends /chat/completions; https://api.deepseek.com/v1 is equally valid and is not doubled.",
+    "thinking": "Selected RAG profile: low reasoning; reasoning text is excluded from receipts, numeric usage retained.",
+    "max_input_utf8_bytes": "A UTF-8 BYTE guard on the delivered messages. It is not a token count, not a verified context-window check and not a spend cap. Token counts stay unverified until a real response reports usage.",
+    "max_output_tokens": "16384 total output budget; low reasoning effort tested after high/8192 exhausted its entire output on one case.",
+    "validation": "E36 v3: all370 real answers complete; 95 questions received retrieved images. AI screening plus independent Claude/Codex review: strict361/370, with9 residual cases. Existing-corpus regression, not newholdout or fullretrieval rerun. See doc/DeepSeek全量生成验证.md."
+  }
+}

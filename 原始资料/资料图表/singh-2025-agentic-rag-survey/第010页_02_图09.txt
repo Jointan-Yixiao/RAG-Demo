@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第10页，页面内出现顺序02，图09；图表主题：智能体规划与工具使用。检索描述：左侧展示记忆增强规划、任务分解、计划选择、外部规划器及反思精炼；右侧展示智能体推理后调用工具影响环境，再依据观察结果修订响应的循环。检索关键词：智能体规划, 任务分解, 计划选择, 外部规划器, 工具使用, 环境反馈。

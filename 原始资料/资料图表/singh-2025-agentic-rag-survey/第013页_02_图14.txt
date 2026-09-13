@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第13页，页面内出现顺序02，图14；图表主题：Orchestrator-Workers工作流。检索描述：编排器接收查询、拆分任务并调度多个LLM工作节点，最后由综合器汇集各工作节点产出形成统一响应。检索关键词：Orchestrator-Workers, 编排器, 工作节点, 任务拆分, 结果综合。

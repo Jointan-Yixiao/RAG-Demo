@@ -1,0 +1,1 @@
+来源：papers/gao-2024-rag-survey.pdf（Retrieval-Augmented Generation for Large Language Models: A Survey）；定位：原文第15页，页面内出现顺序01，表04；图表主题：RAG评估框架对比。检索描述：比较RGB、RECALL、RAGAS、ARES、TruLens和CRUD等评估框架的目标、评估维度与量化指标，涉及检索质量、生成质量、忠实性、相关性、鲁棒性以及Accuracy、EM、BERTScore等度量。检索关键词：RAG评估框架, RGB, RECALL, RAGAS, ARES, TruLens, CRUD, BERTScore。

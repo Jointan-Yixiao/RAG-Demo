@@ -1,0 +1,1 @@
+来源：langchain/agentic-rag.md（LangChain Agentic RAG Tutorial）；定位：原文出现顺序001，图01；图表主题：LangChain Agentic RAG教程架构。检索描述：带注释的工作流展示Agent判断是否调用检索工具，Tool节点获取文档，相关性条件边判断证据质量；相关则生成答案，不相关则改写问题并返回检索环节。检索关键词：LangChain, Agentic RAG, Tool节点, 相关性判断, 问题改写, 循环检索。

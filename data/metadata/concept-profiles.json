@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "status": "additive_focus_profiles",
+  "not": [
+    "replacement or edit of data/metadata/corpus-terminology/vocabulary-draft.json",
+    "exhaustive synonym list",
+    "live LLM evidence/source fields",
+    "frequency or gold-target metadata"
+  ],
+  "vocabulary_term_ids_unchanged": true,
+  "profiles": [
+    {
+      "concept_id": "retriever",
+      "preferred_en": "retriever",
+      "kind": "component",
+      "definition": "Component that returns documents given a query; not the retrieval process.",
+      "scope_conditions": [
+        "A phrase that describes the retrieval-module component by function is in scope even without the canonical name; not the retrieval step; not a dense subtype unless that subtype is identified."
+      ],
+      "confusable_ids": ["retrieval", "dense-retriever", "generator"],
+      "aliases": ["retriever", "Retriever", "retrievers"],
+      "contextual_descriptions": [
+        "retrieval module as a component"
+      ],
+      "proposed_zh": "检索器",
+      "notes": "Not merged with retrieval; generic module can be broader than dense-retriever.",
+      "evidence": [
+        {
+          "source_path": "原始资料/papers/lewis-2020-rag.md",
+          "quote": "our models leverage two components: (i) a retriever _pη_ ( _z|x_ ) with parameters _η_ that returns (top-K truncated) distributions over text passages given a query _x_ and (ii) a generator"
+        }
+      ]
+    },
+    {
+      "concept_id": "retrieval",
+      "preferred_en": "retrieval",
+      "kind": "process",
+      "definition": "Process of fetching documents; broader than any retriever subtype or pipeline.",
+      "scope_conditions": [
+        "A generic retrieval process/step phrase can be recognized by what it does; not a component; do not merge into specialized IDs without role/context. Canonical preferred_en need not appear literally."
+      ],
+      "confusable_ids": ["retriever", "dense-retrieval", "two-stage-retrieval", "2-step-rag", "information-retrieval"],
+      "aliases": ["retrieval", "Retrieval"],
+      "contextual_descriptions": [
+        "retrieval step before ranking or generation"
+      ],
+      "proposed_zh": "检索",
+      "notes": "Not merged with retriever.",
+      "evidence": [
+        {
+          "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+          "quote": "In RAG, retrieval is achieved by calculating the similarity (e.g. cosine similarity) between the embeddings of the question and document chunks"
+        },
+        {
+          "source_path": "原始资料/langchain/retrieval.md",
+          "quote": "the retrieval step is always executed before the generation step."
+        }
+      ]
+    },
+    {
+      "concept_id": "generator",
+      "preferred_en": "generator",
+      "kind": "component",
+      "definition": "Seq2seq/LM component that writes tokens; not the generation process.",
+      "scope_conditions": [
+        "A phrase that describes the seq2seq/LM answer-writing component by function is in scope even without the canonical name; not generation-the-process; not retriever."
+      ],
+      "confusable_ids": ["generation", "retriever"],
+      "aliases": ["generator", "generators", "Generator"],
+      "contextual_descriptions": [
+        "seq2seq answer-writing component"
+      ],
+      "proposed_zh": "生成器",
+      "notes": "Lewis component name; not merged with generation.",
+      "evidence": [
+        {
+          "source_path": "原始资料/papers/lewis-2020-rag.md",
+          "quote": "The generator component _pθ_ ( _yi|x, z, y_ 1: _i−_ 1) could be modelled using any encoder-decoder."
+        }
+      ]
+    },
+    {
+      "concept_id": "generation",
+      "preferred_en": "generation",
+      "kind": "process",
+      "definition": "Process of producing an answer sequence; not the generator component.",
+      "scope_conditions": [
+        "A generation-step phrase can be recognized by producing an answer sequence; not the generator component; not retrieve-then-rerank. Canonical preferred_en need not appear literally."
+      ],
+      "confusable_ids": ["generator", "retrieval", "2-step-rag"],
+      "aliases": ["generation", "Generation"],
+      "contextual_descriptions": [
+        "answer-generation step after retrieval"
+      ],
+      "proposed_zh": "生成",
+      "notes": "Process; not merged with generator.",
+      "evidence": [
+        {
+          "source_path": "原始资料/langchain/retrieval.md",
+          "quote": "the retrieval step is always executed before the generation step."
+        },
+        {
+          "source_path": "原始资料/papers/lewis-2020-rag.md",
+          "quote": "It has obtained state-of-the-art results on a diverse set of generation tasks and outperforms comparably-sized T5 models"
+        }
+      ]
+    },
+    {
+      "concept_id": "dense-retriever",
+      "preferred_en": "dense retriever",
+      "kind": "component",
+      "definition": "Dense-embedding retriever component (e.g. DPR); not dense-retrieval, not generic retriever.",
+      "scope_conditions": [
+        "A dense-embedding retriever-component phrase can be recognized by function even without the canonical name; subtype ≠ parent; process ≠ component."
+      ],
+      "confusable_ids": ["dense-retrieval", "retriever", "sparse-retrieval"],
+      "aliases": ["dense retriever", "dense retrievers"],
+      "contextual_descriptions": [
+        "DPR/BERT dense retriever vs BM25"
+      ],
+      "proposed_zh": "稠密检索器",
+      "notes": "Component; not an alias of dense retrieval.",
+      "evidence": [
+        {
+          "source_path": "原始资料/papers/lewis-2020-rag.md",
+          "quote": "We compare RAG’s dense retriever to a word overlap-based BM25 retriever [53]."
+        },
+        {
+          "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+          "quote": "This mainly includes a sparse encoder (BM25) and a dense retriever (BERT architecture Pre-training language models)."
+        }
+      ]
+    },
+    {
+      "concept_id": "dense-retrieval",
+      "preferred_en": "dense retrieval",
+      "kind": "process",
+      "definition": "Dense-vector retrieval process; not the dense retriever component.",
+      "scope_conditions": [
+        "A dense-vector retrieval process phrase can be recognized by function; not dense-retriever; not generic retrieval. Canonical preferred_en need not appear literally."
+      ],
+      "confusable_ids": ["dense-retriever", "retrieval", "sparse-retrieval"],
+      "aliases": ["dense retrieval"],
+      "contextual_descriptions": [
+        "dense embedding search as a process"
+      ],
+      "proposed_zh": "稠密检索",
+      "notes": "Not merged with dense retriever.",
+      "evidence": [
+        {
+          "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+          "quote": "These systems leverage dense retrieval models, such as Dense Passage Retrieval (DPR), and neural ranking algorithms to improve retrieval precision."
+        },
+        {
+          "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+          "quote": "the appropriate retrieval granularity during inference can be a simple and effective strategy to improve the retrieval and downstream task performance of dense retrievers."
+        }
+      ]
+    },
+    {
+      "concept_id": "two-stage-retrieval",
+      "preferred_en": "two-stage retrieval",
+      "kind": "architecture",
+      "definition": "Retrieve then rerank; not retrieve then generate; not the vector subtype alias.",
+      "scope_conditions": [
+        "Requires retrieval candidates then reranking as stage two; canonical preferred_en need not appear literally; bare two-step/two-stage is insufficient."
+      ],
+      "confusable_ids": ["two-stage-vector-retrieval", "2-step-rag", "retrieval", "reranking"],
+      "aliases": ["two-stage retrieval", "Two-Stage Retrieval"],
+      "contextual_descriptions": [
+        "first-stage retriever then reranker"
+      ],
+      "proposed_zh": "两阶段检索",
+      "notes": "Not two-stage-vector-retrieval; not 2-step-rag.",
+      "evidence": [
+        {
+          "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+          "quote": "In these two-stage systems, a first-stage model (an embedding model/retriever) retrieves a set of relevant documents from a larger dataset. Then, a second-stage model (the reranker) is used to rerank those documents retrieved by the first-stage model."
+        }
+      ]
+    },
+    {
+      "concept_id": "two-stage-vector-retrieval",
+      "preferred_en": "two-stage vector retrieval",
+      "kind": "architecture",
+      "definition": "Vector-index then rerank; subtype of two-stage retrieval, not a spelling alias.",
+      "scope_conditions": [
+        "Requires an explicit vector first stage then reranking; canonical preferred_en need not appear literally; not parent; not 2-Step RAG."
+      ],
+      "confusable_ids": ["two-stage-retrieval", "2-step-rag", "dense-retrieval"],
+      "aliases": ["two-stage vector retrieval"],
+      "contextual_descriptions": [
+        "vector index query then rerank"
+      ],
+      "proposed_zh": "两阶段向量检索",
+      "notes": "Pinecone phrasing; subtype of two-stage retrieval, not a spelling alias.",
+      "evidence": [
+        {
+          "source_path": "原始资料/pinecone/rerank-results.md",
+          "quote": "Reranking is used as part of a two-stage vector retrieval process to improve the quality of results. You first query an index for a given number of relevant results, and then you send the query and results to a reranking model."
+        }
+      ]
+    },
+    {
+      "concept_id": "2-step-rag",
+      "preferred_en": "2-Step RAG",
+      "kind": "architecture",
+      "definition": "Architecture in which retrieval is mandatory before answer generation; not a workflow that only sometimes retrieves then generates; not retrieve-then-rerank; not bare two-step.",
+      "scope_conditions": [
+        "Retrieval must be a required step before answer generation; optional/sometimes-retrieve is not this ID; canonical preferred_en need not appear literally; bare two-step stays unmapped."
+      ],
+      "confusable_ids": ["two-stage-retrieval", "two-stage-vector-retrieval", "retrieval", "generation"],
+      "aliases": ["2-Step RAG", "2-step RAG"],
+      "contextual_descriptions": [
+        "always retrieve then generate"
+      ],
+      "proposed_zh": "两步 RAG",
+      "notes": "Not two-stage retrieval; bare two-step has no specialized meaning.",
+      "evidence": [
+        {
+          "source_path": "原始资料/langchain/retrieval.md",
+          "quote": "In **2-Step RAG**, the retrieval step is always executed before the generation step. This architecture is straightforward and predictable, making it suitable for many applications where the retrieval of relevant documents is a clear prerequisite for generating an answer."
+        }
+      ]
+    },
+    {
+      "concept_id": "reranker",
+      "preferred_en": "reranker",
+      "kind": "component",
+      "definition": "Second-stage ranking component; not reranking-the-process; not a generator.",
+      "scope_conditions": [
+        "A second-stage ranking-module phrase can be recognized by function after a retriever; not reranking-the-process; not 2-Step RAG generation. Canonical preferred_en need not appear literally."
+      ],
+      "confusable_ids": ["reranking", "retriever", "generator", "two-stage-retrieval"],
+      "aliases": ["reranker", "rerankers"],
+      "contextual_descriptions": [
+        "second-stage ranking model"
+      ],
+      "proposed_zh": "重排序器",
+      "notes": "Not merged with reranking.",
+      "evidence": [
+        {
+          "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+          "quote": "Then, a second-stage model (the reranker) is used to rerank those documents retrieved by the first-stage model."
+        }
+      ]
+    },
+    {
+      "concept_id": "reranking",
+      "preferred_en": "reranking",
+      "kind": "process",
+      "definition": "Reordering a retrieved set; not the reranker component; not generation.",
+      "scope_conditions": [
+        "A reordering-of-retrieved-set process phrase can be recognized by function; not the reranker component; not retrieve-then-generate. Canonical preferred_en need not appear literally."
+      ],
+      "confusable_ids": ["reranker", "generation", "two-stage-retrieval"],
+      "aliases": ["reranking", "Reranking"],
+      "contextual_descriptions": [
+        "reordering first-stage results"
+      ],
+      "proposed_zh": "重排序",
+      "notes": "Process; not merged with reranker.",
+      "evidence": [
+        {
+          "source_path": "原始资料/pinecone/rerank-results.md",
+          "quote": "Improve retrieval quality by reranking initial search results with a hosted or external model to surface the most relevant matches for RAG."
+        }
+      ]
+    },
+    {
+      "concept_id": "sparse-retrieval",
+      "preferred_en": "sparse retrieval",
+      "kind": "process",
+      "definition": "Sparse term-weight retrieval (e.g. BM25); not dense-retrieval; not a component id.",
+      "scope_conditions": [
+        "A sparse term-weight retrieval process phrase can be recognized by function; not dense-retrieval; not generic retrieval. Canonical preferred_en need not appear literally."
+      ],
+      "confusable_ids": ["dense-retrieval", "retrieval", "dense-retriever"],
+      "aliases": ["sparse retrieval"],
+      "contextual_descriptions": [
+        "BM25-style sparse retrieval"
+      ],
+      "proposed_zh": "稀疏检索",
+      "notes": "Not sparse retriever (absent from frozen vocabulary).",
+      "evidence": [
+        {
+          "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+          "quote": "Combining sparse retrieval methods (e.g., a sparse encoder-BM25) with dense retrieval techniques [22] (e.g., DPR - Dense Passage Retrieval ) to maximize accuracy across diverse query types."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第6页，页面内出现顺序02，表02；图表主题：生成与分类任务结果。检索描述：比较BART、RAG-Token、RAG-Sequence和既有最佳系统在Jeopardy问题生成、MS MARCO答案生成及FEVER事实验证上的BLEU、Q-BLEU、ROUGE-L与标签准确率。检索关键词：文本生成, 事实验证, BART, Jeopardy, MS MARCO, FEVER, BLEU, ROUGE-L。

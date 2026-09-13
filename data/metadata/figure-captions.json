@@ -1,0 +1,718 @@
+{
+  "schema_version": 1,
+  "figures": [
+    {
+      "image_path": "原始资料/资料图表/agentic-rag/顺序001_图01.png",
+      "source_path": "原始资料/langchain/agentic-rag.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/agentic-rag/顺序002_图02.png",
+      "source_path": "原始资料/langchain/agentic-rag.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/retrieval/顺序001_图01.png",
+      "source_path": "原始资料/langchain/retrieval.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/retrieval/顺序002_表01.png",
+      "source_path": "原始资料/langchain/retrieval.md",
+      "visual_type": "table",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/retrieval/顺序003_图02.png",
+      "source_path": "原始资料/langchain/retrieval.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/retrieval/顺序004_图03.png",
+      "source_path": "原始资料/langchain/retrieval.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/retrieval/顺序005_图04.png",
+      "source_path": "原始资料/langchain/retrieval.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第002页_01_图01.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Fig. 1",
+      "caption_texts": [
+        "Fig. 1. Technology tree of RAG research. The stages of involving RAG mainly include pre-training, fine-tuning, and inference. With the emergence of LLMs, research on RAG initially focused on leveraging the powerful in-context learning abilities of LLMs, primarily concentrating on the inference stage. Subsequent research has delved deeper, gradually integrating more with the fine-tuning of LLMs. Researchers have also been exploring ways to enhance language models in the pre-training stage through retrieval-augmented techniques."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第003页_01_图02.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Fig. 2",
+      "caption_texts": [
+        "Fig. 2. A representative instance of the RAG process applied to question answering. It mainly consists of 3 steps. 1) Indexing. Documents are split into chunks, encoded into vectors, and stored in a vector database. 2) Retrieval. Retrieve the Top k chunks most relevant to the question based on semantic similarity. 3) Generation. Input the original question and the retrieved chunks together into LLM to generate the final answer."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第004页_01_图03.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Fig. 3",
+      "caption_texts": [
+        "Fig. 3. Comparison between the three paradigms of RAG. (Left) Naive RAG mainly consists of three parts: indexing, retrieval and generation. (Middle) Advanced RAG proposes multiple optimization strategies around pre-retrieval and post-retrieval, with a process similar to the Naive RAG, still following a chain-like structure. (Right) Modular RAG inherits and develops from the previous paradigm, showcasing greater flexibility overall. This is evident in the introduction of multiple specific functional modules and the replacement of existing modules. The overall process is not limited to sequential retrieval and generation; it includes methods such as iterative and adaptive retrieval."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第006页_01_表01.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "table",
+      "label": "TABLE I",
+      "caption_texts": [
+        "TABLE I",
+        "SUMMARY OF RAG METHODS"
+      ],
+      "status": "confirmed",
+      "note": "原文表号与表标题分成相邻两段；两段分别匹配最终正文 chunk 并去重。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第007页_01_图04.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Fig. 4",
+      "caption_texts": [
+        "Fig. 4. RAG compared with other model optimization methods in the aspects of “External Knowledge Required” and “Model Adaption Required”. Prompt Engineering requires low modifications to the model and external knowledge, focusing on harnessing the capabilities of LLMs themselves. Fine-tuning, on the other hand, involves further training the model. In the early stages of RAG (Naive RAG), there is a low demand for model modifications. As research progresses, Modular RAG has become more integrated with fine-tuning techniques."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第011页_01_图05.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Fig. 5",
+      "caption_texts": [
+        "Fig. 5. In addition to the most common once retrieval, RAG also includes three types of retrieval augmentation processes. (left) Iterative retrieval involves alternating between retrieval and generation, allowing for richer and more targeted context from the knowledge base at each step. (Middle) Recursive retrieval involves gradually refining the user query and breaking down the problem into sub-problems, then continuously solving complex problems through retrieval and generation. (Right) Adaptive retrieval focuses on enabling the RAG system to autonomously determine whether external knowledge retrieval is necessary and when to stop retrieval and generation, often utilizing LLM-generated special tokens for control."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第013页_01_表02.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "table",
+      "label": "TABLE II",
+      "caption_texts": [
+        "TABLE II",
+        "DOWNSTREAM TASKS AND DATASETS OF RAG"
+      ],
+      "status": "confirmed",
+      "note": "原文表号与表标题分成相邻两段；两段分别匹配最终正文 chunk 并去重。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第014页_01_表03.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "table",
+      "label": "TABLE III",
+      "caption_texts": [
+        "TABLE III",
+        "SUMMARY OF METRICS APPLICABLE FOR EVALUATION ASPECTS OF RAG"
+      ],
+      "status": "confirmed",
+      "note": "原文表号与表标题分成相邻两段；两段分别匹配最终正文 chunk 并去重。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第015页_01_表04.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "table",
+      "label": "TABLE IV",
+      "caption_texts": [
+        "TABLE IV",
+        "SUMMARY OF EVALUATION FRAMEWORKS"
+      ],
+      "status": "confirmed",
+      "note": "原文表号与表标题分成相邻两段；两段分别匹配最终正文 chunk 并去重。"
+    },
+    {
+      "image_path": "原始资料/资料图表/gao-2024-rag-survey/第016页_01_图06.png",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Fig. 6",
+      "caption_texts": [
+        "Fig. 6. Summary of RAG ecosystem"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第002页_01_图01.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "figure",
+      "label": "Figure 1",
+      "caption_texts": [
+        "Figure 1: Overview of our approach. We combine a pre-trained retriever ( _Query Encoder_ + _Document Index_ ) with a pre-trained seq2seq model ( _Generator_ ) and fine-tune end-to-end. For query _x_ , we use Maximum Inner Product Search (MIPS) to find the top-K documents _zi_ . For final prediction _y_ , we treat _z_ as a latent variable and marginalize over seq2seq predictions given different documents."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第006页_01_表01.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "table",
+      "label": "Table 1",
+      "caption_texts": [
+        "Table 1: Open-Domain QA Test Scores. For TQA, left column uses the standard test set for Open-Domain QA, right column uses the TQA-Wiki test set. See Appendix D for further details."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第006页_02_表02.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "table",
+      "label": "Table 2",
+      "caption_texts": [
+        "Table 2: Generation and classification Test Scores. MS-MARCO SotA is [4], FEVER-3 is [68] and FEVER-2 is [57] *Uses gold context/evidence. Best model without gold access underlined."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第007页_01_图02.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "figure",
+      "label": "Figure 2",
+      "caption_texts": [
+        "Figure 2: RAG-Token document posterior _p_ ( _zi|x, yi, y−i_ ) for each generated token for input “Hemingway\" for Jeopardy generation with 5 retrieved documents. The posterior for document 1 is high when generating “A Farewell to Arms\" and for document 2 when generating “The Sun Also Rises\"."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第007页_02_表03.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "table",
+      "label": "Table 3",
+      "caption_texts": [
+        "Table 3: Examples from generation tasks. RAG models generate more specific and factually accurate responses. ‘?’ indicates factually incorrect responses, * indicates partially correct responses."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第008页_01_表04.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "table",
+      "label": "Table 4",
+      "caption_texts": [
+        "Table 4: Human assessments for the Jeopardy question generation task."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第008页_02_表05.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "table",
+      "label": "Table 5",
+      "caption_texts": [
+        "Table 5: Ratio of distinct to total tri-grams for Question Generation Task."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第008页_03_表06.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "table",
+      "label": "Table 6",
+      "caption_texts": [
+        "Table 6: Ablations on the dev set. As FEVER is a classification task, both RAG models are equivalent."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第008页_04_图03.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "figure",
+      "label": "Figure 3",
+      "caption_texts": [
+        "Figure 3: Left: NQ performance as more documents are retrieved. Center: Retrieval recall performance in NQ. Right: MS-MARCO Bleu-1 and Rouge-L as more documents are retrieved."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第017页_01_图04.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "figure",
+      "label": "Figure 4",
+      "caption_texts": [
+        "Figure 4: Annotation interface for human evaluation of factuality. A pop-out for detailed instructions and a worked example appear when clicking \"view tool guide\"."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/lewis-2020-rag/第019页_01_表07.png",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "visual_type": "table",
+      "label": "Table 7",
+      "caption_texts": [
+        "Table 7: Number of instances in the datasets used. *A hidden subset of this data is used for evaluation"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第003页_01_图01.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 1",
+      "caption_texts": [
+        "Figure 1: An Overview of Agentic RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第004页_01_图02.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 2",
+      "caption_texts": [
+        "Figure 2: Core Components of RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第004页_02_图03.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 3",
+      "caption_texts": [
+        "Figure 3: An Overview of Naive RAG."
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第005页_01_图04.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 4",
+      "caption_texts": [
+        "Figure 4: Overview of Advanced RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第006页_01_图05.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 5",
+      "caption_texts": [
+        "Figure 5: Overview of Modular RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第007页_01_图06.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 6",
+      "caption_texts": [
+        "Figure 6: Overview of Graph RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第008页_01_表01.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "table",
+      "label": "Table 1",
+      "caption_texts": [
+        "Table 1: Comparative Analysis of RAG Paradigms"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第009页_01_图07.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 7",
+      "caption_texts": [
+        "Figure 7: An Overview of AI Agents"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第010页_01_图08.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 8",
+      "caption_texts": [
+        "Figure 8: An Overview of Agentic Self- Reflection"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第010页_02_图09.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 9",
+      "caption_texts": [
+        "Figure 9: Overview of Agentic Planning and Tool Use"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第011页_01_图10.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 10",
+      "caption_texts": [
+        "Figure 10: An Overview of MultiAgent"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第012页_01_图11.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 11",
+      "caption_texts": [
+        "Figure 11: Illustration of Prompt Chaining Workflow"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第012页_02_图12.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 12",
+      "caption_texts": [
+        "Figure 12: Illustration Routing Workflow"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第013页_01_图13.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 13",
+      "caption_texts": [
+        "Figure 13: Illustration of Parallelization Workflow"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第013页_02_图14.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 14",
+      "caption_texts": [
+        "Figure 14: Illustration of Orchestrator-Workers Workflow"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第014页_01_图15.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 15",
+      "caption_texts": [
+        "Figure 15: Illustration of Evaluator-Optimizer Workflow"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第015页_01_图16.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 16",
+      "caption_texts": [
+        "Figure 16: An Overview of Single Agentic RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第017页_01_图17.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 17",
+      "caption_texts": [
+        "Figure 17: An Overview of Multi-Agent Agentic RAG Systems"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第018页_01_图18.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 18",
+      "caption_texts": [
+        "Figure 18: An illustration of Hierarchical Agentic RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第020页_01_图19.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 19",
+      "caption_texts": [
+        "Figure 19: Overview of Agentic Corrective RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第021页_01_图20.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 20",
+      "caption_texts": [
+        "Figure 20: An Overview of Adaptive Agentic RAG"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第023页_01_图21.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 21",
+      "caption_texts": [
+        "Figure 21: An Overview of Agent-G: Agentic Framework for Graph RAG [8]"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第026页_01_图22.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 22",
+      "caption_texts": [
+        "Figure 22: An Overview of GeAR: Graph-Enhanced Agent for Retrieval-Augmented Generation[37]"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第028页_01_图23.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "figure",
+      "label": "Figure 23",
+      "caption_texts": [
+        "Figure 23: An Overview of Agentic Document Workflows (ADW) [38]"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第029页_01_表02.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "table",
+      "label": "Table 2",
+      "caption_texts": [
+        "Table 2: Comparative Analysis: Traditional RAG vs Agentic RAG vs Agentic Document Workflows (ADW)"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第033页_01_表03.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "table",
+      "label": "Table 3",
+      "caption_texts": [
+        "Table 3: Taxonomy-Driven Comparison of Agentic RAG Architectures"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第035页_01_表04.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "table",
+      "label": "Table 4",
+      "caption_texts": [
+        "Table 4: Downstream Tasks and Datasets for RAG Evaluation (Adapted from [21])"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。"
+    },
+    {
+      "image_path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第037页_01_表05.png",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "visual_type": "table",
+      "label": "Table 5",
+      "caption_texts": [
+        "Table 5: Downstream Tasks and Datasets for RAG Evaluation (Adapted from [21]"
+      ],
+      "status": "confirmed",
+      "note": "图片后紧邻带原文编号的图注或表注；保留原文措辞，供最终正文 chunk 精确匹配。该表位于 References 区域，迁移必须保留其表注；原文末尾括号缺失按现有 Markdown 原样保存。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerank-results/顺序001_表01.png",
+      "source_path": "原始资料/pinecone/rerank-results.md",
+      "visual_type": "table",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerank-results/顺序002_表02.png",
+      "source_path": "原始资料/pinecone/rerank-results.md",
+      "visual_type": "table",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerank-results/顺序003_表03.png",
+      "source_path": "原始资料/pinecone/rerank-results.md",
+      "visual_type": "table",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerank-results/顺序004_表04.png",
+      "source_path": "原始资料/pinecone/rerank-results.md",
+      "visual_type": "table",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序001_图01.png",
+      "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [
+        "When storing information in the middle of a context window, an LLM's ability to recall that information becomes worse than had it not been provided in the first place [2]."
+      ],
+      "status": "confirmed",
+      "note": "已核对 Markdown 中紧随原图的独立说明段；原文无图号，label 留空。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序002_图02.png",
+      "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [
+        "A two-stage retrieval system. The vector DB step will typically include a bi-encoder or sparse embedding model."
+      ],
+      "status": "confirmed",
+      "note": "已核对 Markdown 中紧随原图的独立说明段；原文无图号，label 留空。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序003_图03.png",
+      "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [
+        "A bi-encoder model compresses the document or query meaning into a single vector. Note that the bi-encoder processes our query in the same way as it does documents, but at user query time."
+      ],
+      "status": "confirmed",
+      "note": "已核对 Markdown 中紧随原图的独立说明段；原文无图号，label 留空。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序004_图04.png",
+      "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+      "visual_type": "figure",
+      "label": null,
+      "caption_texts": [
+        "A reranker considers query and document to produce a single similarity score over a full transformer inference step. Note that document A here is equivalent to our query."
+      ],
+      "status": "confirmed",
+      "note": "已核对 Markdown 中紧随原图的独立说明段；原文无图号，label 留空。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序005_表01.png",
+      "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+      "visual_type": "table",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序006_表02.png",
+      "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+      "visual_type": "table",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "Markdown 中没有独立的原文图注或表注；不以人工插图编号、章节标题、表头或普通正文提及代替。"
+    },
+    {
+      "image_path": "原始资料/资料图表/SOURCES/顺序001_表01.png",
+      "source_path": "原始资料/SOURCES.md",
+      "visual_type": "table",
+      "label": null,
+      "caption_texts": [],
+      "status": "not_found",
+      "note": "资料管理清单中的表格，无独立原文表注；本项用于完整盘点旧图库，不表示应作为 RAG 知识语料入库。"
+    }
+  ]
+}

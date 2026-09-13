@@ -1,0 +1,28 @@
+{
+  "queries": [
+    {
+      "id": "e41-01",
+      "original_query": "Lewis 那篇 RAG 论文训练时，文档编码器也一起更新吗？为什么？"
+    },
+    {
+      "id": "e41-02",
+      "original_query": "LangChain 的语义搜索引擎教程里，Document 有哪几个属性？id 必须填吗？"
+    },
+    {
+      "id": "e41-03",
+      "original_query": "Pinecone 的 Rerank results 文档里，不同重排模型一次最多能接收多少条文档？"
+    },
+    {
+      "id": "e41-04",
+      "original_query": "把 Lewis RAG 论文的整体架构图给我，看一下检索器和生成器怎么连接。"
+    },
+    {
+      "id": "e41-05",
+      "original_query": "我要看 Anthropic 那篇 RLHF 的原论文，就用你们库里那份，讲讲它对 helpfulness 和 harmlessness 的结论。别拿别的资料凑。"
+    },
+    {
+      "id": "e41-06",
+      "original_query": "Lewis 那篇 RAG 论文有没有报告系统每次回答消耗多少千瓦时的电？我只要论文给出的实测数字，没有就直说。"
+    }
+  ]
+}

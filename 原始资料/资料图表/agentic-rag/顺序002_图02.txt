@@ -1,0 +1,1 @@
+来源：langchain/agentic-rag.md（LangChain Agentic RAG Tutorial）；定位：原文出现顺序002，图02；图表主题：LangGraph编译后的Agentic RAG图。检索描述：展示从__start__进入generate_query_or_respond，按工具调用路由到retrieve，再分支到generate_answer或rewrite_question；改写后的查询回到前序节点，答案生成后进入__end__。检索关键词：LangGraph, 状态图, generate_query_or_respond, retrieve, rewrite_question, generate_answer。

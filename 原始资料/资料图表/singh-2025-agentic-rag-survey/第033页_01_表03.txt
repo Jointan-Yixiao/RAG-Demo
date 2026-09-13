@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第33页，页面内出现顺序01，表03；图表主题：Agentic RAG架构分类体系。检索描述：按智能体数量、控制方式、知识表示与依赖、推理模式和深度、适应性、可扩展性、延迟、工程复杂度及适用场景，比较单智能体、多智能体、层级/纠错和图/文档中心架构。检索关键词：Agentic RAG分类, 单智能体, 多智能体, 层级架构, 纠错架构, 图中心, 工程复杂度。

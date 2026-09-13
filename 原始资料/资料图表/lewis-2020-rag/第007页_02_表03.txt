@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第7页，页面内出现顺序02，表03；图表主题：RAG生成示例对比。检索描述：列出MS MARCO和Jeopardy的实例，对比BART、RAG-Token与RAG-Sequence输出，并以错误或部分正确标记说明RAG生成通常更具体、包含更多可验证事实。检索关键词：生成示例, BART, RAG-Token, RAG-Sequence, MS MARCO, Jeopardy, 事实性。

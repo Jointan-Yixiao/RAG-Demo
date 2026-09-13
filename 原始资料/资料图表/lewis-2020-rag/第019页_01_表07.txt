@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第19页，页面内出现顺序01，表07；图表主题：实验数据集规模。检索描述：汇总Natural Questions、TriviaQA、WebQuestions、CuratedTREC、Jeopardy问题生成、MS MARCO以及FEVER三分类和二分类任务的训练、验证与测试实例数量，并注明隐藏测试集等情况。检索关键词：数据集规模, 训练集, 验证集, 测试集, Natural Questions, TriviaQA, MS MARCO, FEVER。

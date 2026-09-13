@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第8页，页面内出现顺序02，表05；图表主题：生成文本的三元组多样性。检索描述：比较Gold、BART、RAG-Token和RAG-Sequence在MS MARCO与Jeopardy问题生成中的不同三元词组比例，显示RAG-Sequence输出的词汇多样性更接近人工参考。检索关键词：文本多样性, distinct trigram, Gold, BART, RAG-Token, RAG-Sequence。

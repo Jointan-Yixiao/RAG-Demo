@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第7页，页面内出现顺序01，图06；图表主题：Graph RAG架构。检索描述：用户问题进入图谱抽取与检索流程，系统同时利用知识图谱和向量数据库获得关系化内容，再将检索结果与问题构造成增强提示，交由生成模型输出答案。检索关键词：Graph RAG, 知识图谱, 向量数据库, 图检索, 关系推理, 提示增强。

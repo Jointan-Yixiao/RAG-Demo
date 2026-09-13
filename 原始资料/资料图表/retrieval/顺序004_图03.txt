@@ -1,0 +1,1 @@
+来源：langchain/retrieval.md（LangChain Retrieval Guide）；定位：原文出现顺序004，图03；图表主题：Agentic RAG决策循环。检索描述：智能体先判断是否需要外部信息，必要时调用搜索工具，再检查当前证据是否充足；证据不足则继续搜索，充足则生成最终回答。检索关键词：Agentic RAG, 外部信息, 搜索工具, 证据充足性, 决策循环。

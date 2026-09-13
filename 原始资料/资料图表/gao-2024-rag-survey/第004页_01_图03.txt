@@ -1,0 +1,1 @@
+来源：papers/gao-2024-rag-survey.pdf（Retrieval-Augmented Generation for Large Language Models: A Survey）；定位：原文第4页，页面内出现顺序01，图03；图表主题：Naive、Advanced与Modular RAG范式对比。检索描述：对比朴素RAG的索引—检索—生成直线流程、高级RAG在检索前后增加优化环节，以及模块化RAG通过搜索、记忆、融合、路由等组件支持迭代检索和自适应检索的灵活架构。检索关键词：Naive RAG, Advanced RAG, Modular RAG, 检索前优化, 检索后优化, 模块化架构。

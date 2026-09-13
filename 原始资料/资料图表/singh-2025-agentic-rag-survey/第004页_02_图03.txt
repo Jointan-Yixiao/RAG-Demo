@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第4页，页面内出现顺序02，图03；图表主题：Naive RAG架构。检索描述：文档和用户查询由嵌入模型编码，文档向量写入向量数据库；系统通过相似度搜索取回相关文档，将文档与查询组成提示词后交给LLM生成响应。检索关键词：Naive RAG, 嵌入模型, 向量数据库, 相似度搜索, 提示词, LLM。

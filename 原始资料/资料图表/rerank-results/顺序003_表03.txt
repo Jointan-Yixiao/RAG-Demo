@@ -1,0 +1,1 @@
+来源：pinecone/rerank-results.md（Pinecone Rerank Results Reference）；定位：原文出现顺序003，表03；图表主题：bge-reranker-v2-m3参数。检索描述：列出bge-reranker-v2-m3的truncate与rank_fields参数，truncate可选END或NONE且默认NONE，rank_fields用于指定单个待重排文本字段。检索关键词：Pinecone, bge-reranker-v2-m3, truncate, rank_fields, reranker。

@@ -1,0 +1,1 @@
+来源：pinecone/rerank-results.md（Pinecone Rerank Results Reference）；定位：原文出现顺序004，表04；图表主题：pinecone-rerank-v0参数。检索描述：列出pinecone-rerank-v0的truncate与rank_fields参数，truncate可选END或NONE且默认END，模型使用单一文本字段进行相关性重排。检索关键词：Pinecone, pinecone-rerank-v0, truncate END, rank_fields, 相关性重排。

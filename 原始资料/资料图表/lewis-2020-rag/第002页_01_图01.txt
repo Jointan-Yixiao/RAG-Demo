@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第2页，页面内出现顺序01，图01；图表主题：原始RAG模型架构。检索描述：展示查询编码器、非参数检索器、文档索引、最大内积搜索得到的Top-K文档、参数化序列到序列生成器与边缘化概率之间的关系，并说明模型可端到端反向传播训练。检索关键词：RAG原论文, 查询编码器, 非参数记忆, DPR, MIPS, Top-K, seq2seq, 端到端训练。

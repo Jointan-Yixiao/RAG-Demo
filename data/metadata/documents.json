@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "document_id": "agentic-rag",
+      "document_title": "Build a custom RAG agent with LangGraph",
+      "source_path": "原始资料/langchain/agentic-rag.md",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/agentic-rag.md",
+      "include_in_index": true
+    },
+    {
+      "document_id": "chunking-strategies",
+      "document_title": "Chunking Strategies for LLM Applications",
+      "source_path": "原始资料/pinecone/chunking-strategies.md",
+      "source_url": "https://www.pinecone.io/learn/chunking-strategies/",
+      "include_in_index": true
+    },
+    {
+      "document_id": "gao-2024-rag-survey",
+      "document_title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "source_path": "原始资料/papers/gao-2024-rag-survey.md",
+      "source_url": "https://arxiv.org/abs/2312.10997",
+      "include_in_index": true
+    },
+    {
+      "document_id": "lewis-2020-rag",
+      "document_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "source_path": "原始资料/papers/lewis-2020-rag.md",
+      "source_url": "https://arxiv.org/abs/2005.11401",
+      "include_in_index": true
+    },
+    {
+      "document_id": "rag-guide",
+      "document_title": "Retrieval-Augmented Generation (RAG)",
+      "source_path": "原始资料/pinecone/rag-guide.md",
+      "source_url": "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+      "include_in_index": true
+    },
+    {
+      "document_id": "rerank-results",
+      "document_title": "Rerank results",
+      "source_path": "原始资料/pinecone/rerank-results.md",
+      "source_url": "https://docs.pinecone.io/guides/search/rerank-results",
+      "include_in_index": true
+    },
+    {
+      "document_id": "rerankers-two-stage-retrieval",
+      "document_title": "Rerankers and Two-Stage Retrieval",
+      "source_path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+      "source_url": "https://www.pinecone.io/learn/series/rag/rerankers/",
+      "include_in_index": true
+    },
+    {
+      "document_id": "retrieval",
+      "document_title": "Retrieval",
+      "source_path": "原始资料/langchain/retrieval.md",
+      "source_url": "https://docs.langchain.com/oss/python/langchain/retrieval.md",
+      "include_in_index": true
+    },
+    {
+      "document_id": "semantic-search-knowledge-base",
+      "document_title": "Build a semantic search engine with LangChain",
+      "source_path": "原始资料/langchain/semantic-search-knowledge-base.md",
+      "source_url": "https://docs.langchain.com/oss/python/langchain/knowledge-base.md",
+      "include_in_index": true
+    },
+    {
+      "document_id": "singh-2025-agentic-rag-survey",
+      "document_title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "source_path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "source_url": "https://arxiv.org/abs/2501.09136",
+      "include_in_index": true
+    },
+    {
+      "document_id": "SOURCES",
+      "document_title": "原始资料清单",
+      "source_path": "原始资料/SOURCES.md",
+      "source_url": null,
+      "include_in_index": false
+    }
+  ]
+}

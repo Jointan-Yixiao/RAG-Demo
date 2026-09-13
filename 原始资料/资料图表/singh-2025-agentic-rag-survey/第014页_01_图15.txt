@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第14页，页面内出现顺序01，图15；图表主题：Evaluator-Optimizer工作流。检索描述：生成器先输出候选结果，评估器判断是否满足要求；接受则返回响应，拒绝则附带反馈回到生成器继续优化，形成评估驱动的迭代循环。检索关键词：Evaluator-Optimizer, 生成器, 评估器, 反馈, 迭代优化, 质量控制。

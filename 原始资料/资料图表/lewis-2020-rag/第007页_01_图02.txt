@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第7页，页面内出现顺序01，图02；图表主题：RAG-Token文档后验热力图。检索描述：以Hemingway相关Jeopardy生成示例展示五篇检索文档对各生成词元的后验贡献；不同位置分别突出A Farewell to Arms与The Sun Also Rises，说明模型可在词元级切换证据文档。检索关键词：RAG-Token, 后验概率, 热力图, 文档切换, Hemingway, A Farewell to Arms, The Sun Also Rises。

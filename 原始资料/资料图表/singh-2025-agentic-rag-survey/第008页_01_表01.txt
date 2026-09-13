@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第8页，页面内出现顺序01，表01；图表主题：五类RAG范式比较。检索描述：比较Naive、Advanced、Modular、Graph和Agentic RAG的关键特征与优势，分别涵盖关键词或稠密检索、重排和多跳、可组合工具、图关系推理以及智能体自治与自适应。检索关键词：RAG范式, Naive RAG, Advanced RAG, Modular RAG, Graph RAG, Agentic RAG。

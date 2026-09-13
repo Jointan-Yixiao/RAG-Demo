@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第28页，页面内出现顺序01，图23；图表主题：Agentic Document Workflow。检索描述：输入文档由智能体工作流解析并抽取结构化数据，应用规则或生成行动，同时维护状态与上下文并与知识库反馈循环，输出建议、案例摘要、合规、理赔或付款等结构化结果。检索关键词：Agentic Document Workflow, 文档解析, 信息抽取, 规则执行, 状态管理, 知识库, 结构化输出。

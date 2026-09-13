@@ -1,0 +1,1 @@
+来源：pinecone/rerankers-two-stage-retrieval.md（Pinecone Rerankers and Two-Stage Retrieval）；定位：原文出现顺序003，图03；图表主题：Bi-Encoder双编码器。检索描述：文档A和文档B在不同时间分别通过共享Transformer编码成向量A和向量B，再计算向量邻近度或相似度，适合离线索引和大规模快速召回。检索关键词：Bi-Encoder, 双编码器, Transformer, 向量相似度, 离线索引, 快速召回。

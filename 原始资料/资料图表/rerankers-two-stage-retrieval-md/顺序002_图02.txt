@@ -1,0 +1,1 @@
+来源：pinecone/rerankers-two-stage-retrieval.md（Pinecone Rerankers and Two-Stage Retrieval）；定位：原文出现顺序002，图02；图表主题：两阶段检索与重排流程。检索描述：查询先从向量数据库召回Top-K等于25的候选记录，再由重排器根据查询相关性重新排序，选出Top-N等于3的最相关记录供后续生成使用。检索关键词：两阶段检索, Vector DB, Top-K, Reranker, Top-N, 候选召回。

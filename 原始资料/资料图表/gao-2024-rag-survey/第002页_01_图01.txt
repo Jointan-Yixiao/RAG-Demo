@@ -1,0 +1,1 @@
+来源：papers/gao-2024-rag-survey.pdf（Retrieval-Augmented Generation for Large Language Models: A Survey）；定位：原文第2页，页面内出现顺序01，图01；图表主题：RAG研究技术树与发展阶段。检索描述：技术树按预训练、微调和推理三个阶段梳理检索增强生成的发展脉络，展示大语言模型时代的研究重点如何从推理阶段的上下文学习逐渐扩展到微调与预训练阶段的知识增强。检索关键词：RAG综述, 技术树, 预训练, 微调, 推理, 上下文学习, 发展阶段。

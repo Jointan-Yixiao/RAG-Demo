@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "what": "Human/AI-reviewed, non-vector inputs that cannot be derived from Markdown alone. Everything else in the runtime records is rebuilt from original Markdown by scripts/_rebuild_runtime.py.",
+  "visual_descriptions": {
+    "path": "visual-descriptions.jsonl",
+    "sha256": "9642ee5d7af6230301de0c2e6b962d14aae7a14ce79ce2fc9673a2b8f6c9cc5d",
+    "byte_identical_copy_of": "data/metadata/retrieval-eval/experiment-23-visual-enrichment/index/e23-enriched/enriched_description_records.jsonl",
+    "source_manifest": "data/metadata/retrieval-eval/experiment-23-visual-enrichment/index/e23-enriched/manifest.json",
+    "source_manifest_sha256": "48c9dfad6e00f3348722c8b5e77ad91cfcdc6944dee4be0248b3dfd83bdf7829",
+    "records": 68,
+    "origin": "E09/E10 image descriptions (model-written from the original PNG, reviewed) enriched/repaired in E23 against the original images, reviewed and accepted; text only, no vectors"
+  },
+  "reference_only_text_ids": {
+    "path": "reference-only-text-ids.json",
+    "sha256": "548bec6c346d89702e0242e14c39ee35c515d35223e5997f4d26df410c28013f",
+    "count": 24
+  }
+}

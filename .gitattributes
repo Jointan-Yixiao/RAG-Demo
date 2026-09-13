@@ -1,0 +1,2 @@
+# Preserve the exact published bytes used by release-manifest.json SHA-256 checks.
+* -text

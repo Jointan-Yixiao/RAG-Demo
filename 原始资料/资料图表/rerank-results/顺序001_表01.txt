@@ -1,0 +1,1 @@
+来源：pinecone/rerank-results.md（Pinecone Rerank Results Reference）；定位：原文出现顺序001，表01；图表主题：cohere-rerank-4-fast参数。检索描述：列出cohere-rerank-4-fast重排模型的max_tokens_per_doc与rank_fields参数，包括每篇文档最大词元数、可重排字段及默认值1024和text。检索关键词：Pinecone, cohere-rerank-4-fast, rerank, max_tokens_per_doc, rank_fields。

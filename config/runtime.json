@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "purpose": "Inputs and pins for rebuilding the runtime index from text in a fresh directory (E41). Paths are relative to the project root.",
+  "runtime_index_dir": "data/runtime/index",
+  "runtime_records_dir": "data/runtime/records",
+  "corpus": {
+    "catalog": "data/metadata/documents.json",
+    "caption_inventory": "data/metadata/figure-captions.json",
+    "note": "Original Markdown and PNG/TXT sidecars are read from each catalog document's source_path; PDF/HTML are never read."
+  },
+  "reviewed_inputs": {
+    "visual_descriptions": "data/metadata/retrieval-eval/experiment-41-final-delivery/release-inputs/visual-descriptions.jsonl",
+    "reference_only_text_ids": "data/metadata/retrieval-eval/experiment-41-final-delivery/release-inputs/reference-only-text-ids.json"
+  },
+  "split": {
+    "rule": "E16: a text record whose GME chat-envelope token count exceeds max_input_tokens is bisected with overlap_tokens",
+    "max_input_tokens": 1500,
+    "overlap_tokens": 240
+  },
+  "models": {
+    "embedding": {
+      "repo": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+      "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "dim": 1536,
+      "query_instruction": "Find an image that matches the given text.",
+      "document_encoding": "get_text_embeddings(texts=[text], is_query=False); text records encode `text`, visual descriptions encode `retrieval_text`",
+      "loaded_with": "transformers AutoModel, trust_remote_code=True, local_files_only=True"
+    },
+    "reranker": {
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "env_var_for_local_dir": "RAG_BGE_MODEL_DIR",
+      "files": {
+        "config.json": {"size": 795},
+        "model.safetensors": {"size": 2271071852, "sha256": "d9e3e081faff1eefb84019509b2f5558fd74c1a05a2c7db22f74174fcedb5286"},
+        "sentencepiece.bpe.model": {"size": 5069051, "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"},
+        "special_tokens_map.json": {"size": 964},
+        "tokenizer.json": {"size": 17098273, "sha256": "69564b696052886ed0ac63fa393e928384e0f8caada38c1f4864a9bfbf379c15"},
+        "tokenizer_config.json": {"size": 1173}
+      }
+    }
+  },
+  "retrieval_defaults_unchanged": {
+    "retrieval_mode": "hybrid",
+    "k": 10,
+    "lexical_cap": 20,
+    "answer_review": "on",
+    "note": "Informational; the runner's own defaults are authoritative."
+  }
+}

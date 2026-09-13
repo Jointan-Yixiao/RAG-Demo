@@ -1,0 +1,1 @@
+来源：pinecone/rerankers-two-stage-retrieval.md（Pinecone Rerankers and Two-Stage Retrieval）；定位：原文出现顺序005，表01；图表主题：文档与文本块示例。检索描述：列出Document和Chunk层级的示例数据，展示多个原始文档如何被切分为关于RLHF等主题的文本块，说明检索系统的文档—分块数据结构。检索关键词：Document, Chunk, 文档切分, RLHF, 检索数据结构。

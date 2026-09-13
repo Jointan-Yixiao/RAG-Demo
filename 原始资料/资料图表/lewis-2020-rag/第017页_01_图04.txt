@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第17页，页面内出现顺序01，图04；图表主题：事实性人工标注界面。检索描述：展示Jeopardy问题生成的人类事实性评估页面：标注者阅读主题和两个候选句子，在A正确、B正确、两者都正确、两者都错误之间选择，并参考任务说明和控制题提示。检索关键词：标注界面, 人工评估, 事实性, 众包标注, 对照问题, Jeopardy。

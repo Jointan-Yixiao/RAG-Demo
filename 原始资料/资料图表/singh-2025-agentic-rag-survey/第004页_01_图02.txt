@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第4页，页面内出现顺序01，图02；图表主题：RAG核心循环。检索描述：展示用户请求依次经过检索、增强、生成并返回响应的基础闭环，用于概括外部知识检索与大语言模型生成之间的标准衔接方式。检索关键词：RAG核心流程, 用户查询, 检索, 上下文增强, 生成, 响应。

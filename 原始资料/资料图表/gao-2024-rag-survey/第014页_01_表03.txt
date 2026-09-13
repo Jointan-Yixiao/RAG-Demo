@@ -1,0 +1,1 @@
+来源：papers/gao-2024-rag-survey.pdf（Retrieval-Augmented Generation for Large Language Models: A Survey）；定位：原文第14页，页面内出现顺序01，表03；图表主题：RAG评估指标与评估维度。检索描述：建立Accuracy、EM、Recall、Precision、R-Rate、余弦相似度、Hit Rate、MRR、NDCG、BLEU和ROUGE等指标与上下文相关性、忠实性、答案相关性、抗噪声、负样本拒绝、信息整合及反事实鲁棒性之间的对应关系。检索关键词：RAG评估, 准确率, 召回率, MRR, NDCG, BLEU, ROUGE, 忠实性, 鲁棒性。

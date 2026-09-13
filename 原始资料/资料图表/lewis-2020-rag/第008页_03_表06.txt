@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第8页，页面内出现顺序03，表06；图表主题：RAG消融实验。检索描述：对比RAG-Token和RAG-Sequence采用BM25、冻结检索器与完整端到端训练时在问答、Jeopardy生成、MS MARCO和FEVER上的开发集成绩，用于分析学习型检索器和联合训练的贡献。检索关键词：消融实验, BM25, 冻结检索器, 端到端训练, RAG-Token, RAG-Sequence。

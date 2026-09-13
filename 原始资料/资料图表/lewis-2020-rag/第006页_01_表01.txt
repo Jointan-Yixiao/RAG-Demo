@@ -1,0 +1,1 @@
+来源：papers/lewis-2020-rag.pdf（Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks）；定位：原文第6页，页面内出现顺序01，表01；图表主题：开放域问答测试成绩。检索描述：比较闭卷T5、开放书REALM和DPR，以及RAG-Token与RAG-Sequence在Natural Questions、TriviaQA、WebQuestions和CuratedTREC上的准确率，突出RAG在多项基准上的最佳结果。检索关键词：开放域问答, T5, REALM, DPR, RAG-Token, RAG-Sequence, Natural Questions, TriviaQA。

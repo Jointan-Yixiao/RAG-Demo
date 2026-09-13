@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第23页，页面内出现顺序01，图21；图表主题：Agent-G图RAG架构。检索描述：数据库内容进入图和文本检索器库并通过排序器选择证据，智能体控制检索与生成；评论器和验证器构成批判模块，对生成答案提供反馈直至得到最终结果。检索关键词：Agent-G, Graph RAG, 图检索器, 文本检索器, 排序器, Critic, Validator。

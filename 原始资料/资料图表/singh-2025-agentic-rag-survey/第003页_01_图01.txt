@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第3页，页面内出现顺序01，图01；图表主题：Agentic RAG综述全景。检索描述：以总览图串联LangGraph、LlamaIndex、AutoGen、Semantic Kernel、CrewAI等框架，RAG挑战与范式，智能体的工具、规划、任务角色和记忆组件，反思、规划、多智能体、工具使用模式，以及工作流、分类体系和优势。检索关键词：Agentic RAG, LangGraph, LlamaIndex, AutoGen, 智能体组件, 反思, 规划, 多智能体。

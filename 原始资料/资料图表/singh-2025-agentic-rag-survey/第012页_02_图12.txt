@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第12页，页面内出现顺序02，图12；图表主题：Routing工作流。检索描述：用户查询先由路由器判定类型或需求，再选择多个专用LLM路径之一进行处理并返回响应，适合按意图、领域或能力分流。检索关键词：Routing, 路由器, 查询分类, 专用LLM, 意图识别, 工作流。

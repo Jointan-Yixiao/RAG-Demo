@@ -1,0 +1,1 @@
+来源：pinecone/rerank-results.md（Pinecone Rerank Results Reference）；定位：原文出现顺序002，表02；图表主题：cohere-rerank-3.5参数。检索描述：列出cohere-rerank-3.5的max_chunks_per_doc和rank_fields参数，说明每篇文档最大切块数量范围为1至3072，并支持指定一个或多个用于重排的字段。检索关键词：Pinecone, cohere-rerank-3.5, max_chunks_per_doc, rank_fields, 多字段重排。

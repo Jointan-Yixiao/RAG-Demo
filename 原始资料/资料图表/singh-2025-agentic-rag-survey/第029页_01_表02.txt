@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第29页，页面内出现顺序01，表02；图表主题：Traditional RAG、Agentic RAG与ADW对比。检索描述：从关注点、上下文维护、适应性、编排、工具/API使用、可扩展性、推理、应用、优势与挑战等维度比较传统RAG、智能体RAG和智能体文档工作流。检索关键词：Traditional RAG, Agentic RAG, ADW, 上下文维护, 工具调用, 可扩展性, 推理。

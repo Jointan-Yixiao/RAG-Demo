@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第26页，页面内出现顺序01，图22；图表主题：GeAR图扩展检索框架。检索描述：展示SyncGE基础检索与阅读、基于多样化三元组束搜索和倒数排名融合的图扩展，以及带有gist记忆构造器、查询改写器、段落/三元组链接和停止控制的多步扩展。检索关键词：GeAR, SyncGE, 图扩展, 三元组束搜索, RRF, Gist Memory, 多步检索。

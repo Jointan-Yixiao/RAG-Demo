@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第18页，页面内出现顺序01，图18；图表主题：层级式Agentic RAG。检索描述：主智能体接收用户查询并负责最终响应，同时向多个子智能体委派任务；子智能体处理不同知识域或子问题后将结果返回主智能体。检索关键词：层级式智能体, Master Agent, Sub-Agent, 任务委派, 分层编排。

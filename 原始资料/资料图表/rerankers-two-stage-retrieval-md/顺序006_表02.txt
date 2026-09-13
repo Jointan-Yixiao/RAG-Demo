@@ -1,0 +1,1 @@
+来源：pinecone/rerankers-two-stage-retrieval.md（Pinecone Rerankers and Two-Stage Retrieval）；定位：原文出现顺序006，表02；图表主题：重排前后位置变化示例。检索描述：比较候选文本块的原始召回位置与重排后名次，其中原来位于第23和第14位的相关片段被提升到前两名，直观体现重排器纠正向量召回排序的作用。检索关键词：重排结果, 原始位置, rerank position, 排名提升, 向量召回, 精排。

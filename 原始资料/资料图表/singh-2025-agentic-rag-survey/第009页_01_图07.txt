@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第9页，页面内出现顺序01，图07；图表主题：AI智能体组成。检索描述：以LLM和智能体任务/角色为中心，连接短期与长期记忆、包含反思和自我批评的规划模块，以及向量检索、网页搜索、API等工具和外部数据源。检索关键词：AI Agent, LLM, 短期记忆, 长期记忆, 规划, 反思, 工具调用。

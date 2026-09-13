@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第12页，页面内出现顺序01，图11；图表主题：Prompt Chaining工作流。检索描述：查询依次经过多个LLM节点，每一步输出由门控条件判断是否继续；满足条件则进入下一阶段，退出分支则提前停止，最终形成串行处理响应。检索关键词：Prompt Chaining, 提示链, 门控条件, 串行工作流, LLM节点。

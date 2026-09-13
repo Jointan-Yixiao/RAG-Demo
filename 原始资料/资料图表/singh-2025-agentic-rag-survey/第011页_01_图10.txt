@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第11页，页面内出现顺序01，图10；图表主题：多智能体协作模式。检索描述：查询由Agent 1接收并形成响应，Agent 1同时与Agent 2和Agent 3协调信息或任务，体现多智能体之间的通信、分工与汇总。检索关键词：多智能体, Multi-Agent, 智能体协作, 任务分工, Agent通信, 响应汇总。

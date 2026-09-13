@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第35页，页面内出现顺序01，表04；图表主题：RAG下游任务与评估数据集。检索描述：汇总问答、图问答、对话、推荐、推理、语言理解与事实核查、摘要、生成与分类、代码搜索、鲁棒性、数学和翻译任务的代表性参考文献与数据集。检索关键词：RAG评估, 下游任务, QA, Graph QA, FEVER, MMLU, 摘要, 代码搜索。

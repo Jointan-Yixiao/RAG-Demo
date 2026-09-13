@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第10页，页面内出现顺序01，图08；图表主题：智能体自我反思模式。检索描述：用户输入先触发LLM响应，随后由反思环节评价回答、提出批评与优点，并把反馈送回模型形成迭代改进闭环。检索关键词：自我反思, Reflection, Critique, 反馈循环, LLM智能体, 回答优化。

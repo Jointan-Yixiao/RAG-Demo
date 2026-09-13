@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第15页，页面内出现顺序01，图16；图表主题：单智能体Agentic RAG。检索描述：输入查询进入检索路由智能体，智能体可选择不同向量搜索库或网页搜索工具访问外部数据源，再将检索上下文交给LLM生成响应。检索关键词：单智能体, Agentic RAG, 检索路由, 向量搜索, Web搜索, 工具选择。

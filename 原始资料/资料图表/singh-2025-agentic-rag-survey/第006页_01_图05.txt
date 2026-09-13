@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第6页，页面内出现顺序01，图05；图表主题：Modular RAG架构。检索描述：围绕RAG核心流程组合Memory、Fusion、Predict、Search、Routing和Demonstrate等模块，并列出retrieve-read、rewrite-retrieve-rerank-read、demonstrate-search-predict及迭代检索等可编排模式。检索关键词：Modular RAG, Memory, Fusion, Search, Routing, Rerank, 模块编排。

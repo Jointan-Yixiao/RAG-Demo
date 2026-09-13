@@ -1,0 +1,28 @@
+{
+  "profile": "deepseek-flash-nonthinking",
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "max_output_tokens": 4096,
+  "max_input_utf8_bytes": 131072,
+  "timeout_seconds": 120,
+  "extra_body": {
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "docs": {
+    "api_overview": "https://api-docs.deepseek.com/",
+    "thinking_mode": "https://api-docs.deepseek.com/guides/thinking_mode/",
+    "opened_on": "2026-09-12"
+  },
+  "notes": {
+    "model": "deepseek-flash is the model id recommended by the official docs; the older deepseek-v4-flash names are aliases of it.",
+    "base_url": "The adapter appends /chat/completions; https://api.deepseek.com/v1 is equally valid and is not doubled.",
+    "thinking": "DeepSeek enables thinking by default, and thinking tokens are billed output. thinking.type=disabled is sent to keep generation cheap; it is a DeepSeek-specific field and other OpenAI-compatible profiles should leave extra_body empty.",
+    "max_input_utf8_bytes": "A UTF-8 BYTE guard on the delivered messages. It is not a token count, not a verified context-window check and not a spend cap. Token counts stay unverified until a real response reports usage.",
+    "max_output_tokens": "Sent as max_tokens; the same 4096 output reserve the Gemini rounds used, chosen for comparability, not measured as optimal.",
+    "validation": "One authorized image probe on 2026-09-12 returned HTTP 200, model deepseek-flash and a visually verified answer. This is not a full RAG quality evaluation. See doc/DeepSeek接入-单图实测.md."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "document_id": "agentic-rag",
+      "original_title": "Build a custom RAG agent with LangGraph",
+      "chinese_titles": ["用 LangGraph 构建自定义 RAG 智能体"],
+      "aliases": ["LangGraph RAG agent 教程", "LangGraph 自定义检索智能体教程"],
+      "authors": [],
+      "vendors": ["langchain"],
+      "requires_citation_context": false
+    },
+    {
+      "document_id": "chunking-strategies",
+      "original_title": "Chunking Strategies for LLM Applications",
+      "chinese_titles": ["面向 LLM 应用的切块策略"],
+      "aliases": ["切块策略文", "切块策略教程", "Pinecone 切块策略教程"],
+      "authors": [],
+      "vendors": ["pinecone"],
+      "requires_citation_context": false
+    },
+    {
+      "document_id": "gao-2024-rag-survey",
+      "original_title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "chinese_titles": ["面向大语言模型的检索增强生成综述"],
+      "aliases": ["Gao 2024 RAG survey", "Gao 2024 RAG 综述"],
+      "authors": ["gao"],
+      "vendors": [],
+      "requires_citation_context": false
+    },
+    {
+      "document_id": "lewis-2020-rag",
+      "original_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "chinese_titles": ["面向知识密集型 NLP 任务的检索增强生成"],
+      "aliases": ["Lewis 2020 RAG", "Lewis 2020 RAG 论文"],
+      "authors": ["lewis"],
+      "vendors": [],
+      "requires_citation_context": false
+    },
+    {
+      "document_id": "rag-guide",
+      "original_title": "Retrieval-Augmented Generation (RAG)",
+      "chinese_titles": ["检索增强生成入门"],
+      "aliases": ["RAG 入门文", "Pinecone RAG 入门教程"],
+      "authors": [],
+      "vendors": ["pinecone"],
+      "requires_citation_context": false
+    },
+    {
+      "document_id": "rerank-results",
+      "original_title": "Rerank results",
+      "chinese_titles": ["重排序检索结果"],
+      "aliases": ["Pinecone Rerank results 指南", "Pinecone 重排序结果指南"],
+      "authors": [],
+      "vendors": ["pinecone"],
+      "requires_citation_context": false
+    },
+    {
+      "document_id": "rerankers-two-stage-retrieval",
+      "original_title": "Rerankers and Two-Stage Retrieval",
+      "chinese_titles": ["重排器与两阶段检索"],
+      "aliases": ["两阶段重排教程", "Pinecone 两阶段重排教程", "Pinecone 两阶段重排笔记本"],
+      "authors": [],
+      "vendors": ["pinecone"],
+      "requires_citation_context": false
+    },
+    {
+      "document_id": "retrieval",
+      "original_title": "Retrieval",
+      "chinese_titles": ["检索"],
+      "aliases": ["LangChain Retrieval 官方文档", "LangChain 检索文档"],
+      "authors": [],
+      "vendors": ["langchain"],
+      "requires_citation_context": true
+    },
+    {
+      "document_id": "semantic-search-knowledge-base",
+      "original_title": "Build a semantic search engine with LangChain",
+      "chinese_titles": ["用 LangChain 构建语义搜索引擎"],
+      "aliases": [
+        "LangChain 语义搜索引擎教程",
+        "LangChain 语义 PDF 搜索教程",
+        "LangChain 语义 PDF 搜索示例",
+        "用 LangChain 在 PDF 上做语义搜索引擎的教程"
+      ],
+      "authors": [],
+      "vendors": ["langchain"],
+      "requires_citation_context": false
+    },
+    {
+      "document_id": "singh-2025-agentic-rag-survey",
+      "original_title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "chinese_titles": ["智能体检索增强生成：Agentic RAG 综述"],
+      "aliases": ["Singh 2025 Agentic RAG survey", "Singh 2025 Agentic RAG 综述"],
+      "authors": ["singh"],
+      "vendors": [],
+      "requires_citation_context": false
+    }
+  ]
+}

@@ -1,0 +1,1371 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-13T02:52:15.051595+00:00",
+  "excluded_by_design": [
+    ".env and any credential",
+    ".venv / site-packages",
+    "data/index (old vectors)",
+    "data/chunks (rebuilt instead)",
+    "model weights (pinned download)",
+    "experiment results and answers",
+    "PDF/HTML originals"
+  ],
+  "files": [
+    {
+      "path": "scripts/_rag_e2e.py",
+      "role": "code",
+      "bytes": 78779,
+      "sha256": "ee585b6a34b47c59972871aed148a0348ff8ee4ee426bb5b4293dc02c31e7e98"
+    },
+    {
+      "path": "scripts/_rag_e2e_frontend.py",
+      "role": "code",
+      "bytes": 28697,
+      "sha256": "252119566b880792a94b0e27bf86df044e8de4bc6c229282b9d9fedbe8794a6e"
+    },
+    {
+      "path": "scripts/_hybrid_retrieval.py",
+      "role": "code",
+      "bytes": 16484,
+      "sha256": "7a0018e2e730a5aba53b096306278a1e0824cd976fc1c8dc27fb227561918254"
+    },
+    {
+      "path": "scripts/_answer_semantics.py",
+      "role": "code",
+      "bytes": 39303,
+      "sha256": "7ab4ec9369326eed2cdf90a60c889a649bc397439bf8ea959d37f36f26d10892"
+    },
+    {
+      "path": "scripts/_concept_query.py",
+      "role": "code",
+      "bytes": 87297,
+      "sha256": "e0c54c434436298c38ce3914f620b033e133bbfbc2073f5e5a0ffd27dfef3f30"
+    },
+    {
+      "path": "scripts/_context_builder.py",
+      "role": "code",
+      "bytes": 36664,
+      "sha256": "a82621fd8ed50b4cef6787f1d7c26e4177a90003e3c1dca8cc730f42fecbceab"
+    },
+    {
+      "path": "scripts/_deepseek_rag.py",
+      "role": "code",
+      "bytes": 49519,
+      "sha256": "d9e691ade8b047dbb9793f8445894dd70ac218e6ab0339d418ba17dca86af743"
+    },
+    {
+      "path": "scripts/_description_store.py",
+      "role": "code",
+      "bytes": 38872,
+      "sha256": "657d14d639f4114653fce1044421e6157c206254fbb7a23fbda011a6612765f9"
+    },
+    {
+      "path": "scripts/_gemini_context.py",
+      "role": "code",
+      "bytes": 23840,
+      "sha256": "f04448be2f4e95d3f5c3ad5ea4a9d12550dcdf55585c50f541aae276a3d173f2"
+    },
+    {
+      "path": "scripts/_gemini_generate.py",
+      "role": "code",
+      "bytes": 35985,
+      "sha256": "d854e4d120b953d3cc9e2f8782a0f77cc5a0d58ca4f6ec68616ce6b0a757e6d0"
+    },
+    {
+      "path": "scripts/_gme_search.py",
+      "role": "code",
+      "bytes": 7105,
+      "sha256": "51a5fceb422a9bb19a6d8ae4e42413f89614571c2c556da666d0d50efb8b64fe"
+    },
+    {
+      "path": "scripts/_intent_retrieval.py",
+      "role": "code",
+      "bytes": 23356,
+      "sha256": "120aa18624019d262bf30042e608e26826536aedb76ceda1a4269f9b21bf6bbb"
+    },
+    {
+      "path": "scripts/_openai_compatible_generate.py",
+      "role": "code",
+      "bytes": 52076,
+      "sha256": "f3daaa5c4fba435e572436d7a5f97772ee0440e103275e5118e1d5a743c30cdf"
+    },
+    {
+      "path": "scripts/_pre_retrieval.py",
+      "role": "code",
+      "bytes": 68220,
+      "sha256": "6f88e7637d0e35a43fb3e769003bef918c8311cfa0b6345a742a7ef1f1dadefb"
+    },
+    {
+      "path": "scripts/_query_input_refine.py",
+      "role": "code",
+      "bytes": 23336,
+      "sha256": "f8fbc61cb728c68a2ad21847d805be61f6a3e22484f66ec91739140cfda2f30b"
+    },
+    {
+      "path": "scripts/_query_input_tighten.py",
+      "role": "code",
+      "bytes": 33435,
+      "sha256": "832d392ecbfbecd9d643eb3ed591b9b6d247ca2239f7385f9560aea4f8fbacb4"
+    },
+    {
+      "path": "scripts/_query_prefilter.py",
+      "role": "code",
+      "bytes": 9683,
+      "sha256": "1b2a4611662970ebd7f278d3e2af6f4171aef4d713da6466b69b311b24f62193"
+    },
+    {
+      "path": "scripts/_source_citation.py",
+      "role": "code",
+      "bytes": 18007,
+      "sha256": "7afc6c1e2798917c9c8bfc924241edd44ad536d3b3347c5e978712ed5e33f7bf"
+    },
+    {
+      "path": "scripts/_source_identity.py",
+      "role": "code",
+      "bytes": 13856,
+      "sha256": "48875656fa021f3a5564d7eec942c034c1c270de64e0efec05bfe9be1b5ff4cf"
+    },
+    {
+      "path": "scripts/_span_candidates.py",
+      "role": "code",
+      "bytes": 3615,
+      "sha256": "12709b6cacca5b516db05ed4271b2657d56ecb7424614f850955b84f1ae08bfc"
+    },
+    {
+      "path": "scripts/_user_response.py",
+      "role": "code",
+      "bytes": 13743,
+      "sha256": "4b473e73b30ac1ca7e465c7d1f327b20cd8ca8f37b9342166bf3878d76b1229e"
+    },
+    {
+      "path": "scripts/_validate_chunks_v2.py",
+      "role": "code",
+      "bytes": 13080,
+      "sha256": "84be488409f7abafff7a7f48bb7209384ea8831de8fc7c9a0e668afa7114a4a7"
+    },
+    {
+      "path": "scripts/_validate_chunks_v3.py",
+      "role": "code",
+      "bytes": 11275,
+      "sha256": "9bb144ba2e103c11363ab76afc6dceeb41aaf64f73ac998d2f8adef6766f5e4d"
+    },
+    {
+      "path": "scripts/_visual_associations.py",
+      "role": "code",
+      "bytes": 29122,
+      "sha256": "1ce9e39766fece0525e506fd377474a8df5cc6507bc971988c49501c02e03514"
+    },
+    {
+      "path": "scripts/_vocabulary_query.py",
+      "role": "code",
+      "bytes": 14020,
+      "sha256": "b496ba0120dacced306d98fe7cab7bb6c357baf565c0322db993f52e11e45d81"
+    },
+    {
+      "path": "scripts/_runtime_bundle.py",
+      "role": "code",
+      "bytes": 12945,
+      "sha256": "78dbab013363c376cb1a3d0d0cf6e40cbe7111df6541571c7951fa8876536b98"
+    },
+    {
+      "path": "scripts/_rebuild_runtime.py",
+      "role": "code",
+      "bytes": 28386,
+      "sha256": "ee26c1e2ccb3524b59352b93f925f3c95b85b3001d4796f88db343d5e1187a3e"
+    },
+    {
+      "path": "scripts/_prepare_delivery.py",
+      "role": "code",
+      "bytes": 13755,
+      "sha256": "7df8e84dce05d2e13c8c82bf356f00268b374864f1fc1a2d7eff8006ff8ea053"
+    },
+    {
+      "path": "scripts/_chunk_corpus.py",
+      "role": "code",
+      "bytes": 21312,
+      "sha256": "03f2c6c6dd49c99506bf46e9aa3c00e1af2c7a7f8171caebe000d5b260ae2a76"
+    },
+    {
+      "path": "scripts/_migrate_chunks_v2.py",
+      "role": "code",
+      "bytes": 21496,
+      "sha256": "b9e01281467ef08bd17d58e878a09605a2041544be96687433d9dd1a2f70a545"
+    },
+    {
+      "path": "scripts/_grok_concept_linker.mjs",
+      "role": "code-node",
+      "bytes": 7855,
+      "sha256": "9c2eb96e54d33d468bfabdb57dabce1fbed96c87418b8ab71d976620c707eefd"
+    },
+    {
+      "path": "scripts/_grok_concept_mcp.mjs",
+      "role": "code-node",
+      "bytes": 12012,
+      "sha256": "91e10988805c4be3bcd423a269e754d1de4650738a4dcd35a3a8b7867e4a5d0f"
+    },
+    {
+      "path": "scripts/_grok_concept_prompt.mjs",
+      "role": "code-node",
+      "bytes": 11163,
+      "sha256": "63682d9d0580ba46710dcd331d4f335dd291c4235f628720ab8a78cb0e222ba4"
+    },
+    {
+      "path": "scripts/_grok_planner_json.mjs",
+      "role": "code-node",
+      "bytes": 611,
+      "sha256": "5b15ced6a6a95678613b96f1c02ac4e135cc9549e994fcbb864de5de7ee2008f"
+    },
+    {
+      "path": "scripts/_grok_planner_prompt.mjs",
+      "role": "code-node",
+      "bytes": 960,
+      "sha256": "bcba6cf1d62874c76be7c270f7f94fad6dbfafc475e5383935a80b0f4fc677d0"
+    },
+    {
+      "path": "scripts/_grok_query_planner.mjs",
+      "role": "code-node",
+      "bytes": 3351,
+      "sha256": "5ea166958f5844f75fa760dfbdb4da56462ca24bd4620105837a5fc62a8940ef"
+    },
+    {
+      "path": "scripts/_grok_query_refine.mjs",
+      "role": "code-node",
+      "bytes": 10623,
+      "sha256": "d9a890bfa67c0dd5203a6b101ddef3f9471a335c66ccbdc47c9c4bb5747b729a"
+    },
+    {
+      "path": "scripts/_grok_query_tighten.mjs",
+      "role": "code-node",
+      "bytes": 14443,
+      "sha256": "cbabf6982d5f71826d26cf709f83778a43d562cc9550d8d5ee03836c303ae7ce"
+    },
+    {
+      "path": "scripts/_grok_vocabulary_normalizer.mjs",
+      "role": "code-node",
+      "bytes": 3187,
+      "sha256": "77733e8a75b9d004d715199f82e0aebef6c8479b99829f6f056c641f20a3aa6c"
+    },
+    {
+      "path": "scripts/_grok_vocabulary_prompt.mjs",
+      "role": "code-node",
+      "bytes": 5331,
+      "sha256": "530edc60ff34b00a3633b2ac9891b4436a16510f477d24f0f97ac650df7199c0"
+    },
+    {
+      "path": "scripts/_rag_e2e_prompts.mjs",
+      "role": "code-node",
+      "bytes": 8266,
+      "sha256": "916a45afbc0ebb963246e92828ae8c2fa112eb1f6c0b685e8d289731e4579a22"
+    },
+    {
+      "path": "data/metadata/retrieval-eval/experiment-16-overlap-split/build_split_index.py",
+      "role": "code-deployed-in-experiment-dir",
+      "bytes": 26646,
+      "sha256": "7ce66742e3fabbd31da66a11bb147f26d25af71da086826d9036af645a5823b9"
+    },
+    {
+      "path": "data/metadata/retrieval-eval/experiment-22-caption-dedup/claude_caption_dedup.py",
+      "role": "code-deployed-in-experiment-dir",
+      "bytes": 34438,
+      "sha256": "6c607109b694ebf729ca3c0208cc65de93a4e979286a5762299d49672da12bbe"
+    },
+    {
+      "path": "data/metadata/retrieval-eval/experiment-23-visual-enrichment/claude_enrich.py",
+      "role": "code-deployed-in-experiment-dir",
+      "bytes": 42074,
+      "sha256": "c8083d77e51c9e34db209adfee7c3f2e6fddf6c4f89deda720b7629213ba403c"
+    },
+    {
+      "path": "config/generation.deepseek-rag.json",
+      "role": "config-or-prompt",
+      "bytes": 1637,
+      "sha256": "083fcbaf300b63bfe1cfcaf2b05f3ad413120f5c5c7fcda43f986b8f15d9b990"
+    },
+    {
+      "path": "config/generation.deepseek.json",
+      "role": "config-or-prompt",
+      "bytes": 1639,
+      "sha256": "5bc460d9c5c372b689643ab35ade51b8e670469ae005e8c754ae04f447444c25"
+    },
+    {
+      "path": "config/deepseek-rag-rules.txt",
+      "role": "config-or-prompt",
+      "bytes": 5578,
+      "sha256": "eb05c843a5c9ced42365234e076b16da6525c66f4ea8bb9c9776b615c35924d5"
+    },
+    {
+      "path": "config/runtime.json",
+      "role": "config-or-prompt",
+      "bytes": 2448,
+      "sha256": "b432d9d0dce2751be9199ea3323b679e5c7f2bb745b31c84626451d15ca91e39"
+    },
+    {
+      "path": "prompts/rag-evidence-grounded-v2.txt",
+      "role": "config-or-prompt",
+      "bytes": 4201,
+      "sha256": "a3cf6f4d6da7ee5fc40527ef189ec6bb75a30ff1b5ef629959380f011b1ce4c8"
+    },
+    {
+      "path": "doc/retrieval-concept-linker-preserve-query-detail.md",
+      "role": "prompt",
+      "bytes": 1141,
+      "sha256": "4f744eaa2291f85c17378c1b31d477b60ce68ac89c684178805a98a3d14a3bc5"
+    },
+    {
+      "path": "doc/retrieval-concept-linker-prompt.md",
+      "role": "prompt",
+      "bytes": 6202,
+      "sha256": "cf0c27097c9f0bfbbe8075f7190a90e782579d1fc74ba69047d1a65943b6c8f1"
+    },
+    {
+      "path": "doc/retrieval-concept-linker-repair.md",
+      "role": "prompt",
+      "bytes": 1949,
+      "sha256": "ac79a52432ee495f7899981b503037bf67ca32eaee98b29c6d1b9fc1da46034a"
+    },
+    {
+      "path": "doc/retrieval-intent-planner-preserve-query-detail.md",
+      "role": "prompt",
+      "bytes": 1215,
+      "sha256": "7f7a27863879dfa65065f706e377ac426188f88c686c23c535c8c7b15e2e8f92"
+    },
+    {
+      "path": "doc/retrieval-intent-planner-prompt.md",
+      "role": "prompt",
+      "bytes": 6421,
+      "sha256": "5b8a99aec9b1cc151ddeafad42ce93a3cd6fb393353460849eba749c389df71b"
+    },
+    {
+      "path": "doc/retrieval-literal-boundary.md",
+      "role": "prompt",
+      "bytes": 4376,
+      "sha256": "c020e212e5b265bfa5ed6f87370f7f17c7c34ab244620436699d91f3ab42e9dc"
+    },
+    {
+      "path": "doc/retrieval-query-input-refine.md",
+      "role": "prompt",
+      "bytes": 4363,
+      "sha256": "6e8b0d5fa2165df1a52f7582f2dca002467d3cc696cabf5d93fd078a64768f64"
+    },
+    {
+      "path": "doc/retrieval-query-input-tighten.md",
+      "role": "prompt",
+      "bytes": 4272,
+      "sha256": "a094c6ea7aa969cd81c29aa1cc5fbf7419105aaef10d996e3ba1a352ab7d3a58"
+    },
+    {
+      "path": "doc/retrieval-semantic-frame-prompt.md",
+      "role": "prompt",
+      "bytes": 4633,
+      "sha256": "8b970af5f798227d44678cd3ca3f53c488f4e25ace25bb24c0a3ece5017b32fb"
+    },
+    {
+      "path": "doc/retrieval-vocabulary-normalizer-prompt.md",
+      "role": "prompt",
+      "bytes": 4099,
+      "sha256": "27536419a2849a26d4068b04dcfcd2e87949fe6ee552cf9722b62a7f3dea796e"
+    },
+    {
+      "path": "schemas/chunk-v2.schema.json",
+      "role": "schema",
+      "bytes": 6353,
+      "sha256": "84190aed9d0ff7c821b67ab5b51e24119d2da4127d5ae89e53651353befbc978"
+    },
+    {
+      "path": "schemas/chunk-v3.schema.json",
+      "role": "schema",
+      "bytes": 8109,
+      "sha256": "29fc8bf85ac37e50cd6e6a7c2ec8a73d4a6d7ab98e6b635b7e2216607e829339"
+    },
+    {
+      "path": "data/metadata/documents.json",
+      "role": "metadata",
+      "bytes": 3224,
+      "sha256": "1fddbc9f5555c79ad73767187fc4828ab9f6211dbf034c668259f33068ee66b9"
+    },
+    {
+      "path": "data/metadata/source-identities.json",
+      "role": "metadata",
+      "bytes": 3834,
+      "sha256": "705cddc7419ca55bb2e257da495fdf26d61786998b9c2b7565c129d8b0f84656"
+    },
+    {
+      "path": "data/metadata/figure-captions.json",
+      "role": "metadata",
+      "bytes": 37041,
+      "sha256": "5c088e9f85a0a992e2fb854ecf5890f9b47f623ccda106cb57bf4479ff61f9c6"
+    },
+    {
+      "path": "data/metadata/concept-profiles.json",
+      "role": "metadata",
+      "bytes": 14037,
+      "sha256": "c1b8a305b9b8ec804925229d1aca91dc9cbb15c8e37767b5bea508d9e6ae4578"
+    },
+    {
+      "path": "data/metadata/corpus-terminology/vocabulary-draft.json",
+      "role": "metadata",
+      "bytes": 397310,
+      "sha256": "cc713fc130817d0410acc8bb5a812f3886e8b79756295c34f37d431d53922c31"
+    },
+    {
+      "path": "原始资料/langchain/agentic-rag.md",
+      "role": "corpus-markdown",
+      "bytes": 24150,
+      "sha256": "5e174d9407fd697ea2d1ebc96f5c0148e3a4d0da43a50a979bc4b5b99e9b8914"
+    },
+    {
+      "path": "原始资料/资料图表/agentic-rag/顺序001_图01.png",
+      "role": "corpus-image",
+      "bytes": 82024,
+      "sha256": "7b3666dbe127256b72bfee9b4a20a1bdec426b34ed9b6d12a2d44dfa04c03b23"
+    },
+    {
+      "path": "原始资料/资料图表/agentic-rag/顺序001_图01.txt",
+      "role": "corpus-image-description",
+      "bytes": 482,
+      "sha256": "05a3990eff6245213df2f69b77721aa91fd378d5525dca05f02da6137b7b8029"
+    },
+    {
+      "path": "原始资料/资料图表/agentic-rag/顺序002_图02.png",
+      "role": "corpus-image",
+      "bytes": 69137,
+      "sha256": "f24da19cdfe5193faa834c4bdee1a83f6b59112dd41bf37ede16205ac71667e1"
+    },
+    {
+      "path": "原始资料/资料图表/agentic-rag/顺序002_图02.txt",
+      "role": "corpus-image-description",
+      "bytes": 502,
+      "sha256": "6a9197eb6603736b1ed7465ab9f7ebf5eec0d84706e1ce6bb60b9406cda7a489"
+    },
+    {
+      "path": "原始资料/pinecone/chunking-strategies.md",
+      "role": "corpus-markdown",
+      "bytes": 17370,
+      "sha256": "762c9264aaed34fc0197a388f50a82d21b560837a96594aa9597705fb5036437"
+    },
+    {
+      "path": "原始资料/papers/gao-2024-rag-survey.md",
+      "role": "corpus-markdown",
+      "bytes": 115015,
+      "sha256": "94245ea04bdefb5906959997f19ec7ef8e29fd085187754f7b18bf6d3fc408d1"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第002页_01_图01.png",
+      "role": "corpus-image",
+      "bytes": 464101,
+      "sha256": "54e730095cc1ecd823eb67d1fe80b3395dc83839a2f8adfed6c45e703e7dc528"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第002页_01_图01.txt",
+      "role": "corpus-image-description",
+      "bytes": 571,
+      "sha256": "0f3471871188d8a17d0b902a013941b0565afc855dd34f6421158f9ffdc7e07d"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第003页_01_图02.png",
+      "role": "corpus-image",
+      "bytes": 367834,
+      "sha256": "bed9e324d3633be49f0911d8a0218b4a3faae54a717aad556563d3bfda2eb5a7"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第003页_01_图02.txt",
+      "role": "corpus-image-description",
+      "bytes": 555,
+      "sha256": "67594a8445684a7d122eac7203cf58f326bb1cd60ec34298306d26af2c56bed7"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第004页_01_图03.png",
+      "role": "corpus-image",
+      "bytes": 436258,
+      "sha256": "3cf1ae02b696115508ee4ecaa035a8f9253492c58319f9dc02901adaafdef3dc"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第004页_01_图03.txt",
+      "role": "corpus-image-description",
+      "bytes": 580,
+      "sha256": "f9632d4de545b9285daf16ded39c5868c91d4e6a242e133aafebf5e81ec11f3f"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第006页_01_表01.png",
+      "role": "corpus-image",
+      "bytes": 934123,
+      "sha256": "9420affd8dbf0eb42647e6cad7489eb7cd8e6be5dd5ec4ea1fcdc4f4569dd57a"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第006页_01_表01.txt",
+      "role": "corpus-image-description",
+      "bytes": 797,
+      "sha256": "13fd9dc22d91f4219e0af091e764c8dc5a60d5b57a96d6bfa77d52a0972bbc12"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第007页_01_图04.png",
+      "role": "corpus-image",
+      "bytes": 347624,
+      "sha256": "ed6cbf62ffa7cc40658317dcb91ed7a615b968307eeafba8b02c191eb797044c"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第007页_01_图04.txt",
+      "role": "corpus-image-description",
+      "bytes": 557,
+      "sha256": "022a5a68fc6b87ceaaf8e643cab70e3a2dfb8295331fb4a61ffa8ec87a76a1c5"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第011页_01_图05.png",
+      "role": "corpus-image",
+      "bytes": 399354,
+      "sha256": "ec9f4ed3b7c79797b4ebbadcc00dc73e752645b87ff462bb46fbdb29ab8e94d4"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第011页_01_图05.txt",
+      "role": "corpus-image-description",
+      "bytes": 561,
+      "sha256": "27388301d10c7069f836c6c9189b506717646b2508cac77fab7dedc652de10a0"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第013页_01_表02.png",
+      "role": "corpus-image",
+      "bytes": 535260,
+      "sha256": "49dd6adf97b5c18340ed81c0e39080826009d2cca3c76070d031a253eb1b0cb4"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第013页_01_表02.txt",
+      "role": "corpus-image-description",
+      "bytes": 689,
+      "sha256": "bf99984d391d61433c2ac8b8605adaa9896aeb97766036fbef4a746f665c6405"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第014页_01_表03.png",
+      "role": "corpus-image",
+      "bytes": 92555,
+      "sha256": "41ee8e699ccc13b90d7ae3bdbac37a065526a2d2087f8354d1c47286104a0ed3"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第014页_01_表03.txt",
+      "role": "corpus-image-description",
+      "bytes": 593,
+      "sha256": "8a75f173a462bf380c9a329e99619b9bbc9452189828f1cf3c58275d600ce2ff"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第015页_01_表04.png",
+      "role": "corpus-image",
+      "bytes": 274478,
+      "sha256": "c1348adec13a600c46157cd1e30043b2b9c48cb7c5c969aa25cd7fe0322ffbbd"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第015页_01_表04.txt",
+      "role": "corpus-image-description",
+      "bytes": 537,
+      "sha256": "765691594c49f51d243ddc50cee2ac2395c2fe98bf330d5a56feb96879b7bbd4"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第016页_01_图06.png",
+      "role": "corpus-image",
+      "bytes": 365642,
+      "sha256": "6bd016dd85166f8d7bcad570df45367f5a4ff4cf453bb9d6fd17bec9c931fd10"
+    },
+    {
+      "path": "原始资料/资料图表/gao-2024-rag-survey/第016页_01_图06.txt",
+      "role": "corpus-image-description",
+      "bytes": 572,
+      "sha256": "c787ef879bbe67f970107cfd2d0cc394e9669712b6fe8604d0204670f93fddc7"
+    },
+    {
+      "path": "原始资料/papers/lewis-2020-rag.md",
+      "role": "corpus-markdown",
+      "bytes": 71506,
+      "sha256": "3d66cf0ba80cb8f2895d6f189a1910cff47abe78a41daa65254bd701171699cd"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第002页_01_图01.png",
+      "role": "corpus-image",
+      "bytes": 207779,
+      "sha256": "ce6a20c298d50429c11d8a4a0abe07d4cc15187cfbe94eec8335fcdc527a3258"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第002页_01_图01.txt",
+      "role": "corpus-image-description",
+      "bytes": 551,
+      "sha256": "cb311dfa63cb922e98d5a248a8f74e8d1a990747bada45328646004a4548f916"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第006页_01_表01.png",
+      "role": "corpus-image",
+      "bytes": 93072,
+      "sha256": "22d4c0b77c8f383b9379db0d6dc28a17b07526d5de3a91d6581ad98f00fda2a1"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第006页_01_表01.txt",
+      "role": "corpus-image-description",
+      "bytes": 527,
+      "sha256": "958bb316184f84788fa3405c4d57562e4dc989333e887c0871f635dd97f835b2"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第006页_02_表02.png",
+      "role": "corpus-image",
+      "bytes": 89327,
+      "sha256": "2d0625a5d43bf192878e681d4394e9a40436969f4cd9d504263502b94c66191a"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第006页_02_表02.txt",
+      "role": "corpus-image-description",
+      "bytes": 497,
+      "sha256": "168d369c7b3e718bb5bdc15307c685b6276557490c4ce5f8946a8e3e1f4e5783"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第007页_01_图02.png",
+      "role": "corpus-image",
+      "bytes": 125891,
+      "sha256": "530a335abb4a2d5dc1f1b27a19384c250226253c70d3eb92fe09c1f4997e7d44"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第007页_01_图02.txt",
+      "role": "corpus-image-description",
+      "bytes": 563,
+      "sha256": "e89bc41a26ca69c3f673ef911b6ff1536894fa49a0e76a3255f2a85f2d1b0ede"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第007页_02_表03.png",
+      "role": "corpus-image",
+      "bytes": 203052,
+      "sha256": "17506747f907804101a378848787f6192c513b46c41c2c78a8f552f60abac511"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第007页_02_表03.txt",
+      "role": "corpus-image-description",
+      "bytes": 496,
+      "sha256": "bbcc03abc180f6c976ced797c79179d2cf93aaad6abd127ff755cd86f96b156d"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第008页_01_表04.png",
+      "role": "corpus-image",
+      "bytes": 57856,
+      "sha256": "937351a52fa50bd57bb4b09d50f31a1d852418d075d63dec0e92530e9ddf464d"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第008页_01_表04.txt",
+      "role": "corpus-image-description",
+      "bytes": 512,
+      "sha256": "d99afee1c203ddb61166dbd413f5dbff424eb6c3ad4de6fcfd75df35d9420fc3"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第008页_02_表05.png",
+      "role": "corpus-image",
+      "bytes": 48812,
+      "sha256": "caa2397f65e351214cd3edcb84a7066e78b9f92a95a945177a09357214d669b7"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第008页_02_表05.txt",
+      "role": "corpus-image-description",
+      "bytes": 502,
+      "sha256": "2206a640286589ae888c8b7623610a009cabb8cda7ed254c7d5cac7c92972613"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第008页_03_表06.png",
+      "role": "corpus-image",
+      "bytes": 138561,
+      "sha256": "0fa9b6cdec9d2764ec4606d4cdb53f777a25a5f8a0463c8944af7e7ee6d3697b"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第008页_03_表06.txt",
+      "role": "corpus-image-description",
+      "bytes": 525,
+      "sha256": "62ebdd242f22035cca04f8ae674970dc7ac7978c2fbedd122a227a648c6fa03f"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第008页_04_图03.png",
+      "role": "corpus-image",
+      "bytes": 109882,
+      "sha256": "5dfb4f8831e8bf99ac66099de62bef8a404e19e415dce0f8a8a5f5460b79b3b8"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第008页_04_图03.txt",
+      "role": "corpus-image-description",
+      "bytes": 519,
+      "sha256": "767f05e9361d309e2176136fe11aaf660f775528381e23162e9531c8f7ad4dbc"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第017页_01_图04.png",
+      "role": "corpus-image",
+      "bytes": 176344,
+      "sha256": "1c954ca383e9603805789c85a488010e7b8d3d135d55254ca2485c60013d0a54"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第017页_01_图04.txt",
+      "role": "corpus-image-description",
+      "bytes": 542,
+      "sha256": "c21179ce1f03292699c30e30e9e3f55ce1fbd8e9e32672f429543b29e19dcf44"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第019页_01_表07.png",
+      "role": "corpus-image",
+      "bytes": 102238,
+      "sha256": "db0a35076260cc69e57b63d131c7f039118a7b2852a5f537aa1e4502938531ae"
+    },
+    {
+      "path": "原始资料/资料图表/lewis-2020-rag/第019页_01_表07.txt",
+      "role": "corpus-image-description",
+      "bytes": 551,
+      "sha256": "717d167b2349b8325d82f9849227a857e2e523e349fd7c18229a4491f41d0308"
+    },
+    {
+      "path": "原始资料/pinecone/rag-guide.md",
+      "role": "corpus-markdown",
+      "bytes": 14629,
+      "sha256": "0d0d5a1a889931420dfb9328dd506b1f8cc816893a17cf2a7aa04c562f83dec6"
+    },
+    {
+      "path": "原始资料/pinecone/rerank-results.md",
+      "role": "corpus-markdown",
+      "bytes": 48216,
+      "sha256": "c97c47f271b57d8989c820095612ed9804ce23d08c716878b1874b3c02fce332"
+    },
+    {
+      "path": "原始资料/资料图表/rerank-results/顺序001_表01.png",
+      "role": "corpus-image",
+      "bytes": 66727,
+      "sha256": "13ffe855f6fd148e76097cfe685bf5327ffb0701b8d8eef777508f78f3c96de8"
+    },
+    {
+      "path": "原始资料/资料图表/rerank-results/顺序001_表01.txt",
+      "role": "corpus-image-description",
+      "bytes": 430,
+      "sha256": "1efb215805630248f1b99cafcd490cf7832eeb144f1c5f49378f0aa63ace00cf"
+    },
+    {
+      "path": "原始资料/资料图表/rerank-results/顺序002_表02.png",
+      "role": "corpus-image",
+      "bytes": 81010,
+      "sha256": "9fe11977ea64a3fb228a06bb2de14b7bb24722e5bbb51c71c6675d619f9a6d3f"
+    },
+    {
+      "path": "原始资料/资料图表/rerank-results/顺序002_表02.txt",
+      "role": "corpus-image-description",
+      "bytes": 451,
+      "sha256": "afc494d9fb78649bc0b5c7a50fc9f8c2ed06c2d474009746bb555dda2925aeb0"
+    },
+    {
+      "path": "原始资料/资料图表/rerank-results/顺序003_表03.png",
+      "role": "corpus-image",
+      "bytes": 91533,
+      "sha256": "ce02891a121d01b308cadf7d9114a1e8f02d1eac34edccf894f34e3df52923ac"
+    },
+    {
+      "path": "原始资料/资料图表/rerank-results/顺序003_表03.txt",
+      "role": "corpus-image-description",
+      "bytes": 410,
+      "sha256": "51b38624e656e436166d3d1d86dbee98c649d9be4f5bd64f2054fa6b7230bd3c"
+    },
+    {
+      "path": "原始资料/资料图表/rerank-results/顺序004_表04.png",
+      "role": "corpus-image",
+      "bytes": 91230,
+      "sha256": "35a7308702bafbeb20405342ce9ab9a98168e43a1726eecb2f9f7cc8713716f9"
+    },
+    {
+      "path": "原始资料/资料图表/rerank-results/顺序004_表04.txt",
+      "role": "corpus-image-description",
+      "bytes": 421,
+      "sha256": "245a5781990ab2b04ce74bc12ca8934d42e449fadf302437ab032c3da3af96d5"
+    },
+    {
+      "path": "原始资料/pinecone/rerankers-two-stage-retrieval.md",
+      "role": "corpus-markdown",
+      "bytes": 32489,
+      "sha256": "342d916c1bd3ef6564748c36395f0d57d6db0c91bda7d2417e69fe7a190cee8b"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序001_图01.png",
+      "role": "corpus-image",
+      "bytes": 45215,
+      "sha256": "0735d483aeccabb940f135d96c073d7ecb8364d297364c6bee0c2d771466af71"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序001_图01.txt",
+      "role": "corpus-image-description",
+      "bytes": 534,
+      "sha256": "485e3ffb37660d808f737c6728b689c6808fa15f5079ff1a2ed0011b363b018f"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序002_图02.png",
+      "role": "corpus-image",
+      "bytes": 104152,
+      "sha256": "49efdb34636424bb9badc1a7f1e5f027fc1f10c139f0796b1358f78156321b6f"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序002_图02.txt",
+      "role": "corpus-image-description",
+      "bytes": 467,
+      "sha256": "2672b9f388bdf546c85eabffcde52794ca5482dcbd6a80dbf4d28aa91169151f"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序003_图03.png",
+      "role": "corpus-image",
+      "bytes": 83401,
+      "sha256": "9ec5eb8ec0f80c0a1ee5740d1e0125bf78b44de082c658c551b877872be12957"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序003_图03.txt",
+      "role": "corpus-image-description",
+      "bytes": 476,
+      "sha256": "9473676e634601ac77446b83118d6f658aa564f2b5f0456a5c45edb2071e530b"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序004_图04.png",
+      "role": "corpus-image",
+      "bytes": 37207,
+      "sha256": "1c51c92816989d6ddcf41e9a27649e351d23ba8dc91df81f69631cb75ce206ec"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序004_图04.txt",
+      "role": "corpus-image-description",
+      "bytes": 495,
+      "sha256": "85102050d88edb73b0ad1040f801e8b9aca5de4471762b40e8352c43a6e88bdf"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序005_表01.png",
+      "role": "corpus-image",
+      "bytes": 76679,
+      "sha256": "87a302f0d0916ba3c29832f9066b39ffd579110e478914f7f887a5628570e611"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序005_表01.txt",
+      "role": "corpus-image-description",
+      "bytes": 450,
+      "sha256": "523cf1aa46ef07ed3829133069a842d6f8e935c9ce0f1a071f8d5ebac6f6f91b"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序006_表02.png",
+      "role": "corpus-image",
+      "bytes": 120980,
+      "sha256": "d681615aa4c33506bcc089612d8ef6e04663bf4eeebfc2878ac0d2ea59738c22"
+    },
+    {
+      "path": "原始资料/资料图表/rerankers-two-stage-retrieval-md/顺序006_表02.txt",
+      "role": "corpus-image-description",
+      "bytes": 500,
+      "sha256": "d8c2e1fc2ed88f08bd1c864a416946a019fa5c124a71a6022b083c6d2cdf51f9"
+    },
+    {
+      "path": "原始资料/langchain/retrieval.md",
+      "role": "corpus-markdown",
+      "bytes": 15032,
+      "sha256": "ea3789465c6fb7388e423ce2be8c3f8015273aa489af3f639a1ea674b8d6b99f"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序001_图01.png",
+      "role": "corpus-image",
+      "bytes": 53461,
+      "sha256": "b46a044fc6ef5cdcbf59edd2382fad2971cac65693559b98adb1a6c1e467c618"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序001_图01.txt",
+      "role": "corpus-image-description",
+      "bytes": 486,
+      "sha256": "41bb5a88bc7c381605cc6af5edc4efcd7d055289b4187dd9aa90af0c024f4652"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序002_表01.png",
+      "role": "corpus-image",
+      "bytes": 129130,
+      "sha256": "d112f437b47d8b65a93677a8ffeab92b5e983d6f199115ec76039d253da6eb35"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序002_表01.txt",
+      "role": "corpus-image-description",
+      "bytes": 465,
+      "sha256": "d782e67218b7cec576c1192efcb19fd736221755f8d2bc54d6b37338290986fc"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序003_图02.png",
+      "role": "corpus-image",
+      "bytes": 14529,
+      "sha256": "595572a31f6e54507cec9993a666bdbabff097869b8617b48ea07cd279eebef2"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序003_图02.txt",
+      "role": "corpus-image-description",
+      "bytes": 411,
+      "sha256": "b2387f6b7eec4a2539114b70f8ec36d380cbccb67379a91bc5a9705e375b1268"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序004_图03.png",
+      "role": "corpus-image",
+      "bytes": 45637,
+      "sha256": "6a0c6053571c2e21f2a00fbb5fe6f8878d6fa7730b8e9624a9bd916c64560062"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序004_图03.txt",
+      "role": "corpus-image-description",
+      "bytes": 426,
+      "sha256": "8bcc752aa401766107cab367fa7277a2a531df9b25e334368e6104de8f282271"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序005_图04.png",
+      "role": "corpus-image",
+      "bytes": 68499,
+      "sha256": "7ce0ba547645b4a38fd7a45b8a4d22c134b28cb87aeee693f4e3c003c9c014a4"
+    },
+    {
+      "path": "原始资料/资料图表/retrieval/顺序005_图04.txt",
+      "role": "corpus-image-description",
+      "bytes": 465,
+      "sha256": "8779be8fc67ff24277d94a1ddfa7f05f656ad6618d72b8e2923ddcdacebda42c"
+    },
+    {
+      "path": "原始资料/langchain/semantic-search-knowledge-base.md",
+      "role": "corpus-markdown",
+      "bytes": 35136,
+      "sha256": "d248de394df36d0fd3a92055a894e8aedd1bac027c1b461db263fb64b9c730c1"
+    },
+    {
+      "path": "原始资料/papers/singh-2025-agentic-rag-survey.md",
+      "role": "corpus-markdown",
+      "bytes": 123722,
+      "sha256": "c2e19d56e6cfdcb9e8201403576f9b2d8a6aa668110097c5aae27b8c3bbdd1a0"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第003页_01_图01.png",
+      "role": "corpus-image",
+      "bytes": 328195,
+      "sha256": "a57e95ee246e42c48a7376950a7dc308a8d994dc743f163b57e882ca7cb5ea53"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第003页_01_图01.txt",
+      "role": "corpus-image-description",
+      "bytes": 615,
+      "sha256": "bc9834af181607a1acb5c42942d4935aecbd99cb205710aefc8649916d49af66"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第004页_01_图02.png",
+      "role": "corpus-image",
+      "bytes": 35285,
+      "sha256": "96136836362f379e409dff556200ce0301c66bd378b5c88af925f3808a864747"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第004页_01_图02.txt",
+      "role": "corpus-image-description",
+      "bytes": 492,
+      "sha256": "c3c512ab8c732b1cb9d505e2b264064acec0db27791030334c9fa9b83fe7a597"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第004页_02_图03.png",
+      "role": "corpus-image",
+      "bytes": 73003,
+      "sha256": "b0ef16ceabb173f778ffcef630a39a8f5d5af666fdf3b2c2487c873eb34225a6"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第004页_02_图03.txt",
+      "role": "corpus-image-description",
+      "bytes": 513,
+      "sha256": "b1f23a29e6e5e1b6c48453334f5a1802581fc38a99054ceb3b31b2d3ff320031"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第005页_01_图04.png",
+      "role": "corpus-image",
+      "bytes": 81999,
+      "sha256": "d65cbc86bc56944b50b1eb06f4f6fc0fd36f395c688ecbfd5256c23c5bdf05b0"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第005页_01_图04.txt",
+      "role": "corpus-image-description",
+      "bytes": 525,
+      "sha256": "58023ff8cb7953d64b2b1c8cc1746c90ec26f8ddcf68cb558763fe29883d2a41"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第006页_01_图05.png",
+      "role": "corpus-image",
+      "bytes": 98386,
+      "sha256": "5b316188e5da7b27f1f37e14b52b934fbf0a0c0aecb184379518927fcbc5661a"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第006页_01_图05.txt",
+      "role": "corpus-image-description",
+      "bytes": 534,
+      "sha256": "cb73d4bed73d35abc8b722f777797651e4e6648dcb12c8c4b0f5c18155269090"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第007页_01_图06.png",
+      "role": "corpus-image",
+      "bytes": 67298,
+      "sha256": "1fe95da9611da0407ba800a925a4fc1ab32e3529af7783ec6dfd4c2001c6d6d2"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第007页_01_图06.txt",
+      "role": "corpus-image-description",
+      "bytes": 534,
+      "sha256": "14707f9b88a1265c46946a66b3787b0a6e2f81a184de12783b78e7d62e2a6756"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第008页_01_表01.png",
+      "role": "corpus-image",
+      "bytes": 245985,
+      "sha256": "9671a36dfaade7840a714b76c5cd4ff6a1d8a0fb004c9907cc9c3289b8ec1de0"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第008页_01_表01.txt",
+      "role": "corpus-image-description",
+      "bytes": 535,
+      "sha256": "3c2eb94d9f5d307633c2165411e89dd9e456d5a2b2d4cb293f4429e614541c95"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第009页_01_图07.png",
+      "role": "corpus-image",
+      "bytes": 93959,
+      "sha256": "dabfd5fec2be7b3f26efec371220cb3795fdddd86cf90783359bc0292452c7c0"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第009页_01_图07.txt",
+      "role": "corpus-image-description",
+      "bytes": 511,
+      "sha256": "9e3ae85ea098d1dabbf20d8ef63cbe99150d9bfd861f1d689ad5db2961cebc68"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第010页_01_图08.png",
+      "role": "corpus-image",
+      "bytes": 37108,
+      "sha256": "deae41f9eb09a4723a64258dd753c7cb7ff99e44f76ec6200dc93f0a1b35c875"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第010页_01_图08.txt",
+      "role": "corpus-image-description",
+      "bytes": 484,
+      "sha256": "081ce82d8ec103df5ac3084b94194fb314568bd75d195d31149205eee670ffa4"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第010页_02_图09.png",
+      "role": "corpus-image",
+      "bytes": 104014,
+      "sha256": "3e8472d2e07ba45b72910c1963d316e017af4c4313de1b098b49338bd5e3b785"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第010页_02_图09.txt",
+      "role": "corpus-image-description",
+      "bytes": 553,
+      "sha256": "b85a5caaa4e5940bc5d7fd5c9ff5518cca2907e1004bec0e7613d9a0a7fb2093"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第011页_01_图10.png",
+      "role": "corpus-image",
+      "bytes": 34584,
+      "sha256": "7bd283780200c60dfe9f85c211f68ea13f71d6e39a3f2cbbffb904f78a7939c7"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第011页_01_图10.txt",
+      "role": "corpus-image-description",
+      "bytes": 495,
+      "sha256": "c679ddb95956a68846167b51e88c34f82d253fa62fbd80c2100627b5472df4e5"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第012页_01_图11.png",
+      "role": "corpus-image",
+      "bytes": 109118,
+      "sha256": "95d04c83a6dcdc208e7b28b60f3aa01f3e9376dac4b4b655ac71e5627ea9a2cb"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第012页_01_图11.txt",
+      "role": "corpus-image-description",
+      "bytes": 515,
+      "sha256": "d54e338eb1c4c618ddacab6b9fde5313528080dd28affdb736f13326af8273ca"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第012页_02_图12.png",
+      "role": "corpus-image",
+      "bytes": 133579,
+      "sha256": "888552da5918d53cb4cc463af2439d94a7d1a01dbcd39131083593a7425f9fb9"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第012页_02_图12.txt",
+      "role": "corpus-image-description",
+      "bytes": 480,
+      "sha256": "8ae3f39006983e1d691c81a0c30a38c0aa049bb049786606acb3efd89eb7470a"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第013页_01_图13.png",
+      "role": "corpus-image",
+      "bytes": 123608,
+      "sha256": "98791a7ac26de384a7672c1d4d16b508a80c84e22f2f7b2a5769e59ace4a1e1b"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第013页_01_图13.txt",
+      "role": "corpus-image-description",
+      "bytes": 506,
+      "sha256": "5b71718d69ebcb19f4ac09c56d194e7f8d78733e02816b0231a0b7dcb01de626"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第013页_02_图14.png",
+      "role": "corpus-image",
+      "bytes": 89554,
+      "sha256": "e92c8ac01be564c8f6cdd0e5c0bcc559e7a4cf11953f1a6b317547a7722a42d7"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第013页_02_图14.txt",
+      "role": "corpus-image-description",
+      "bytes": 474,
+      "sha256": "66316b5ae9704e0ec122ebea182884b5c36c4da4608d22ce4535f70b346536cd"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第014页_01_图15.png",
+      "role": "corpus-image",
+      "bytes": 119781,
+      "sha256": "acb3b9b2a4bdf476b7682feb8e2e4f90bdd3eb82c3d3ded20bee7bc4384b6a6a"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第014页_01_图15.txt",
+      "role": "corpus-image-description",
+      "bytes": 522,
+      "sha256": "8b4a84f0203d363b6ec7b94f7f27487b7b2153ea5a82bad002d192f8717a466f"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第015页_01_图16.png",
+      "role": "corpus-image",
+      "bytes": 124010,
+      "sha256": "d90d15f22f735ea990facce16898238cfbae42b467a29ab76b42bc68fa4a0164"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第015页_01_图16.txt",
+      "role": "corpus-image-description",
+      "bytes": 509,
+      "sha256": "e9862c9b9b613466f46e6084d12c86008f45e4abbbab6d1f3f40fbe0573e0911"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第017页_01_图17.png",
+      "role": "corpus-image",
+      "bytes": 152874,
+      "sha256": "69b7e35c078d0f31dcde7c41a9411ee0f099bb2f9be222c154b060903bd194d9"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第017页_01_图17.txt",
+      "role": "corpus-image-description",
+      "bytes": 528,
+      "sha256": "b565fc5a5405a0a4ceb0ea4f78e3399835474253f35bec323b14187f93c93223"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第018页_01_图18.png",
+      "role": "corpus-image",
+      "bytes": 45841,
+      "sha256": "47c780599e4aaa2b7539c40f7d2b981f27869aba862dfababa6ad4d1b2fabac3"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第018页_01_图18.txt",
+      "role": "corpus-image-description",
+      "bytes": 502,
+      "sha256": "d43f1edc37854eed6fdd9b775bc3c28c343a0bcd3b2d4700e0906f0d692e8677"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第020页_01_图19.png",
+      "role": "corpus-image",
+      "bytes": 78692,
+      "sha256": "e372cf519618f91ef9dbb79025983a70f95b99bc1aad2490eba57ed28ff6e78e"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第020页_01_图19.txt",
+      "role": "corpus-image-description",
+      "bytes": 527,
+      "sha256": "881f153c104f4df1509591d0f7451cdb91baa37c91bd33db8fce66e7cf808c1b"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第021页_01_图20.png",
+      "role": "corpus-image",
+      "bytes": 80888,
+      "sha256": "6dce1cc8eae8638536c8ad2d8719742918c240c9e0cfdc392b1bb148f0806058"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第021页_01_图20.txt",
+      "role": "corpus-image-description",
+      "bytes": 546,
+      "sha256": "62e60efe72d44c9a2a1b6fa7eb5dda3502f215ca5fe8fa1cc857114a3e2c5068"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第023页_01_图21.png",
+      "role": "corpus-image",
+      "bytes": 330515,
+      "sha256": "8e23834e09ed81c4b5d313bf10cdcedc2b921e26780f2635da2f5bd3c39e1cd1"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第023页_01_图21.txt",
+      "role": "corpus-image-description",
+      "bytes": 542,
+      "sha256": "e51883fcc9670cc4fb2b3b65d0662e38600b22f575f54ea08dec0eed3243319f"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第026页_01_图22.png",
+      "role": "corpus-image",
+      "bytes": 957472,
+      "sha256": "bb56bffd29751de22be529fd599702c39c99d9b455fa179d0681d7a0e1e643b1"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第026页_01_图22.txt",
+      "role": "corpus-image-description",
+      "bytes": 549,
+      "sha256": "84bbc15531148f28d9114191c71246d0e0625a8bf0270570a0757fa69b661848"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第028页_01_图23.png",
+      "role": "corpus-image",
+      "bytes": 452014,
+      "sha256": "a9185d9a2a6a9458dd300f0900bd4da4989ace5e43edc3dc87efb978db0c9d4c"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第028页_01_图23.txt",
+      "role": "corpus-image-description",
+      "bytes": 602,
+      "sha256": "2e83963c9cf111e3b811a87df374b0344cff5d2d0b8205082d243dfe483a9896"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第029页_01_表02.png",
+      "role": "corpus-image",
+      "bytes": 296984,
+      "sha256": "229222a4852532592269379b85921d25561416bdea992209acc814b9c03ed997"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第029页_01_表02.txt",
+      "role": "corpus-image-description",
+      "bytes": 554,
+      "sha256": "02dc54dc5d4091547c7edcf3008984160b7928ae0d877efb39078535941646b7"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第033页_01_表03.png",
+      "role": "corpus-image",
+      "bytes": 255978,
+      "sha256": "0a656914a1577323e935a286342583fc5dd5e682c02ebeedacfb5bd072a10591"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第033页_01_表03.txt",
+      "role": "corpus-image-description",
+      "bytes": 597,
+      "sha256": "f956844eecc27d8bbaf3ad147729e3bf3cd3c8d92ac46a1ce39463594e2bc56b"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第035页_01_表04.png",
+      "role": "corpus-image",
+      "bytes": 438623,
+      "sha256": "e3bad80dc0e6d5b9b2d5b9355891404441106760e51d1ad3c2ac2fc5d399e7e7"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第035页_01_表04.txt",
+      "role": "corpus-image-description",
+      "bytes": 540,
+      "sha256": "0499cb621fe925b1ad9790df90453847ea6952d0b57b6e9673e352aabe9602e5"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第037页_01_表05.png",
+      "role": "corpus-image",
+      "bytes": 447868,
+      "sha256": "e91ffcc76b4e24b33222d9039cda898bd4fccb9a73c127639de2810122fdc2ef"
+    },
+    {
+      "path": "原始资料/资料图表/singh-2025-agentic-rag-survey/第037页_01_表05.txt",
+      "role": "corpus-image-description",
+      "bytes": 690,
+      "sha256": "f99291a525ba5904105648258826c83abd38ee3e27d8026dfe85cd30ea31b417"
+    },
+    {
+      "path": "data/metadata/retrieval-eval/experiment-41-final-delivery/release-inputs/visual-descriptions.jsonl",
+      "role": "reviewed-input",
+      "bytes": 801902,
+      "sha256": "9642ee5d7af6230301de0c2e6b962d14aae7a14ce79ce2fc9673a2b8f6c9cc5d"
+    },
+    {
+      "path": "data/metadata/retrieval-eval/experiment-41-final-delivery/release-inputs/reference-only-text-ids.json",
+      "role": "reviewed-input",
+      "bytes": 2505,
+      "sha256": "548bec6c346d89702e0242e14c39ee35c515d35223e5997f4d26df410c28013f"
+    },
+    {
+      "path": "data/metadata/retrieval-eval/experiment-41-final-delivery/release-inputs/provenance.json",
+      "role": "reviewed-input",
+      "bytes": 1151,
+      "sha256": "23f56e4c5c753cbdba951d4c1d04ce41ee53ab8ba9f1080d07bdd7879af9358f"
+    },
+    {
+      "path": "README.md",
+      "role": "release-doc-or-test",
+      "bytes": 10132,
+      "sha256": "f234cfc4236130e6c24aa6948a28ec416a4e81f475119b8b5e75d4f36312f4d9"
+    },
+    {
+      "path": ".gitignore",
+      "role": "release-doc-or-test",
+      "bytes": 231,
+      "sha256": "bab10eb33763e684a5f0df91a40fb747e2bb98a2cee5ab2edeca62b588703623"
+    },
+    {
+      "path": ".env.example",
+      "role": "release-doc-or-test",
+      "bytes": 528,
+      "sha256": "2f2aee21fb3d689d8c927487973807844a2794ef3f6ec67825ddc7b9d5e5ab33"
+    },
+    {
+      "path": "requirements-runtime.txt",
+      "role": "release-doc-or-test",
+      "bytes": 936,
+      "sha256": "6d63dd55fc606cadffec9f5eea9cdf81088ef76b56e99080f0c691b22972187b"
+    },
+    {
+      "path": "requirements-runtime-lock.txt",
+      "role": "release-doc-or-test",
+      "bytes": 850,
+      "sha256": "cfe6352d98b7bb68892bba4ad47b12830d91b0e75c4d4921bb9e1b7e72c16a04"
+    },
+    {
+      "path": ".gitattributes",
+      "role": "release-doc-or-test",
+      "bytes": 91,
+      "sha256": "464c8d0081a035cf39f9b5c4755674731dba0828905e10401516fecf32977ffd"
+    },
+    {
+      "path": "SOURCES.md",
+      "role": "release-doc-or-test",
+      "bytes": 4427,
+      "sha256": "d770b615f96aa6cdecde6589a6b4322e2e4d8f10aae48113164f1fbed0799319"
+    },
+    {
+      "path": "examples/questions.json",
+      "role": "release-doc-or-test",
+      "bytes": 1052,
+      "sha256": "0bd4af9eca08f9378d0fea07caa196764bb2b0988ea8e342b9a390a82775189b"
+    },
+    {
+      "path": "doc/安装与复现.md",
+      "role": "release-doc-or-test",
+      "bytes": 12229,
+      "sha256": "ecacf413b5fd602df4ff8240bece02ef11055df8fa25494306e906bfc829ddcf"
+    },
+    {
+      "path": "doc/验证结果.md",
+      "role": "release-doc-or-test",
+      "bytes": 7285,
+      "sha256": "b391c45798f2ea92d1acbdda5894ec80c701207e455bfa5124e868a26a77cf89"
+    },
+    {
+      "path": "tests/test_runtime_delivery.py",
+      "role": "release-doc-or-test",
+      "bytes": 14651,
+      "sha256": "86228c80dc9c1ce54bd8fc8063259956250388bd30f4e91234be13c428eb4f1d"
+    },
+    {
+      "path": "doc/RAG-实时端到端运行说明.md",
+      "role": "release-doc-or-test",
+      "bytes": 6749,
+      "sha256": "9424991233574865f4ab9d2dc733d1bc736d6b5f6b09da81780b04f82f06bc16"
+    },
+    {
+      "path": "doc/E40-端到端修复与全量回归.md",
+      "role": "release-doc-or-test",
+      "bytes": 8013,
+      "sha256": "b459b7acd55b3392b7a0290c92c39b25dd61361464de9a05e6ec22f0ca9ceb5a"
+    },
+    {
+      "path": "doc/WO-008-E40端到端完整性与稳定性遗留.md",
+      "role": "release-doc-or-test",
+      "bytes": 7168,
+      "sha256": "0d0770dd854e3e427acd9015191202e7837b90256210b6a88e375e00381eecb5"
+    }
+  ],
+  "missing": [],
+  "refused": [],
+  "counts": {
+    "files": 225,
+    "bytes": 15251921
+  }
+}

@@ -1,0 +1,1 @@
+来源：papers/gao-2024-rag-survey.pdf（Retrieval-Augmented Generation for Large Language Models: A Survey）；定位：原文第16页，页面内出现顺序01，图06；图表主题：RAG生态系统全景。检索描述：从下游任务、LangChain与LlamaIndex等技术栈、朴素/高级/模块化范式、检索优化技术、检索的内容与时机、评估框架以及长上下文、多模态、可扩展性和生产化等前景总结RAG生态。检索关键词：RAG生态, LangChain, LlamaIndex, 检索优化, 评估, 长上下文, 多模态, 生产化。

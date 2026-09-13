@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第5页，页面内出现顺序01，图04；图表主题：Advanced RAG架构。检索描述：在文档索引与检索流程外增加查询预处理和检索后处理，对用户问题进行检索前优化，对召回内容进行重排或压缩，再构建提示词并生成回答。检索关键词：Advanced RAG, 查询优化, 文档索引, 检索后处理, 重排, 上下文压缩。

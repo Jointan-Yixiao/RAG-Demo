@@ -1,0 +1,1 @@
+来源：papers/gao-2024-rag-survey.pdf（Retrieval-Augmented Generation for Large Language Models: A Survey）；定位：原文第3页，页面内出现顺序01，图02；图表主题：代表性RAG问答流程。检索描述：展示文档被切分为文本块、编码为向量并写入向量数据库的索引流程，以及用户问题经过语义检索获得Top-K相关文本块，再与问题共同输入大语言模型生成答案的完整链路。检索关键词：RAG流程, 文档切分, 向量数据库, 语义检索, Top-K, 问答生成。

@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RAG-Demo Chunk v2 — Metadata contract",
+  "description": "用户确认后实施的 Metadata v2 数据合同。JSON Schema 校验结构；ID 引用、路径、图注与邻接语义由迁移及独立校验补充。向量构建不属于该结构校验。",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "chunk_id",
+    "kind",
+    "seq",
+    "metadata"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "chunk_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "kind": {
+      "enum": [
+        "text",
+        "figure"
+      ]
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "description": "仅 text 记录具有的原文正文。"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "text"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "text"
+        ],
+        "properties": {
+          "metadata": {
+            "$ref": "#/$defs/textMetadata"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "figure"
+          }
+        }
+      },
+      "then": {
+        "not": {
+          "required": [
+            "text"
+          ]
+        },
+        "properties": {
+          "metadata": {
+            "$ref": "#/$defs/figureMetadata"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "repoRelativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:]+$",
+      "description": "项目根目录相对路径，使用 /，不含驱动器、URL、反斜杠或 .. 路径段。"
+    },
+    "textMetadata": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "稳定文档 ID，不由标题动态生成。"
+        },
+        "document_title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "经来源核对的文档标题，用于引用展示。"
+        },
+        "source_path": {
+          "$ref": "#/$defs/repoRelativePath",
+          "description": "清洗后 Markdown 的项目根目录相对路径。"
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri",
+          "description": "来源 URL；未知或没有外部来源时为 null。"
+        },
+        "section_path": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "description": "从外到内的可靠章节路径；未知时为空数组。"
+        }
+      },
+      "required": [
+        "document_id",
+        "document_title",
+        "source_path",
+        "source_url",
+        "section_path"
+      ],
+      "additionalProperties": false
+    },
+    "figureMetadata": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "稳定文档 ID，不由标题动态生成。"
+        },
+        "document_title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "经来源核对的文档标题，用于引用展示。"
+        },
+        "source_path": {
+          "$ref": "#/$defs/repoRelativePath",
+          "description": "清洗后 Markdown 的项目根目录相对路径。"
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri",
+          "description": "来源 URL；未知或没有外部来源时为 null。"
+        },
+        "section_path": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "description": "从外到内的可靠章节路径；未知时为空数组。"
+        },
+        "image_path": {
+          "$ref": "#/$defs/repoRelativePath",
+          "description": "实际用于 Embedding 与生成时读取的图片文件路径。"
+        },
+        "visual_type": {
+          "enum": [
+            "figure",
+            "table"
+          ],
+          "description": "现有 kind=figure 下的图/表分类。"
+        },
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "经核对的原文图表标记，如 Fig. 1 或 Table II；没有编号时为 null。"
+        },
+        "prev_text_chunk_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "同文档顺序中最近的前一个文本块；文首不存在时为 null。"
+        },
+        "next_text_chunk_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "同文档顺序中最近的后一个文本块；文末不存在时为 null。"
+        },
+        "caption_chunk_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "uniqueItems": true,
+          "description": "包含这张图/表原文图注或表注的正文 chunk ID，按原文顺序排列；不要求独立图注块。完成扫描后无可靠关联时为空数组；待核实情况另记扫描报告。"
+        }
+      },
+      "required": [
+        "document_id",
+        "document_title",
+        "source_path",
+        "source_url",
+        "section_path",
+        "image_path",
+        "visual_type",
+        "label",
+        "prev_text_chunk_id",
+        "next_text_chunk_id",
+        "caption_chunk_ids"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

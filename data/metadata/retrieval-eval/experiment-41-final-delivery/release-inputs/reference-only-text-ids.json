@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "reference_only_text_ids": [
+    "gao-2024-rag-survey::text::context-fe78bd350880e2eb18f4",
+    "singh-2025-agentic-rag-survey::text::context-8115c0181f32547f4e5b",
+    "singh-2025-agentic-rag-survey::text::context-ee22bac491fdf54622b9",
+    "singh-2025-agentic-rag-survey::text::context-450698635de38e288d52",
+    "singh-2025-agentic-rag-survey::text::context-6c11a5a2a06968ef0706",
+    "singh-2025-agentic-rag-survey::text::context-83c0ff93b4ebafe50b36",
+    "singh-2025-agentic-rag-survey::text::context-6d72e2748bea25d34a10",
+    "singh-2025-agentic-rag-survey::text::context-4a2115bbc13c493698cb",
+    "singh-2025-agentic-rag-survey::text::context-ff8e12ae0f978a39a6b3",
+    "singh-2025-agentic-rag-survey::text::context-0efac56b1fafd23e5493",
+    "singh-2025-agentic-rag-survey::text::context-17f82a6ae4f13b670475",
+    "singh-2025-agentic-rag-survey::text::context-83a85029a26da6e4f8ac",
+    "singh-2025-agentic-rag-survey::text::context-52a5d4f1745a35c68596",
+    "singh-2025-agentic-rag-survey::text::context-243e6cb212c73437dfbb",
+    "singh-2025-agentic-rag-survey::text::context-6803ae09ec23bf2b074b",
+    "singh-2025-agentic-rag-survey::text::context-d2b7f9f788a1b2e7fd56",
+    "singh-2025-agentic-rag-survey::text::context-a9c788fc27c4b57b348c",
+    "singh-2025-agentic-rag-survey::text::context-9f8fb3b05b5bc4956e91",
+    "singh-2025-agentic-rag-survey::text::context-7cc0f2c1dbb07d0461f0",
+    "singh-2025-agentic-rag-survey::text::context-bdfd8f46fabb8be0f102",
+    "singh-2025-agentic-rag-survey::text::context-951162cef16060532e2e",
+    "singh-2025-agentic-rag-survey::text::context-a4f9dff939460624c99a",
+    "singh-2025-agentic-rag-survey::text::context-e4e40dc87462858a8f68",
+    "singh-2025-agentic-rag-survey::text::context-7b6883dcffb87bf565b2"
+  ],
+  "meaning": "Text records kept readable for captions, neighbours and citations but not ranked as independent text candidates: each is a label+title caption line declared by, and contained in, a visual description of the same document.",
+  "provenance": {
+    "decided_by": "E22 caption de-duplication rule (accepted in E24), carried unchanged into the E23 combined runtime bundle used by E37-E40",
+    "copied_from": {
+      "path": "data/metadata/retrieval-eval/experiment-23-visual-enrichment/index/e22-dedup/manifest.json",
+      "sha256": "64bd7352b5f50ef2469fb5c27530cbcbe7d3b84fb29ec4812c0a44703f0c067a",
+      "field": "reference_only_text_ids"
+    }
+  }
+}

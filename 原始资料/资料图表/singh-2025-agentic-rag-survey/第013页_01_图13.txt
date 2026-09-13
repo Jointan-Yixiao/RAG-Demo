@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第13页，页面内出现顺序01，图13；图表主题：Parallelization工作流。检索描述：同一查询被并行分发给三个LLM工作节点，各节点独立生成结果，随后由聚合器合并为最终输出，以提高覆盖度、吞吐量或结果稳健性。检索关键词：Parallelization, 并行化, LLM工作节点, 聚合器, 结果融合。

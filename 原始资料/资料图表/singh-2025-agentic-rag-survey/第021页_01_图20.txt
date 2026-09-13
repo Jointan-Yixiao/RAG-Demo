@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第21页，页面内出现顺序01，图20；图表主题：Adaptive Agentic RAG。检索描述：查询经过检索或图节点后评估文档相关性，再生成答案并检查幻觉与是否真正回答问题；不满足条件时回到检索或生成节点继续迭代，满足后才输出。检索关键词：Adaptive RAG, 自适应检索, 文档相关性, 幻觉检测, 答案验证, 工作流循环。

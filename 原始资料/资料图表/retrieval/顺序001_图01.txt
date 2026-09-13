@@ -1,0 +1,1 @@
+来源：langchain/retrieval.md（LangChain Retrieval Guide）；定位：原文出现顺序001，图01；图表主题：完整检索增强流水线。检索描述：Google Drive、Slack和Notion等数据源经加载器转换为文档，再切块、嵌入并写入向量库；用户查询也被嵌入，检索器取得相关内容后与查询共同输入LLM生成答案。检索关键词：LangChain Retrieval, 文档加载器, 文本切块, Embedding, Vector Store, Retriever, LLM。

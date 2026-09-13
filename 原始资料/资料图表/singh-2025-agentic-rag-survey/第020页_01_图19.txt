@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第20页，页面内出现顺序01，图19；图表主题：Corrective Agentic RAG。检索描述：查询先检索上下文并由相关性评估器判断质量；相关内容直接进入LLM，不相关内容触发查询改写与网页搜索，再把修正后的证据用于生成响应。检索关键词：Corrective RAG, CRAG, 相关性评估, 查询改写, 网页搜索, 纠错检索。

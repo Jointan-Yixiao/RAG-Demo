@@ -1,0 +1,1 @@
+来源：papers/singh-2025-agentic-rag-survey.pdf（Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG）；定位：原文第17页，页面内出现顺序01，图17；图表主题：多智能体Agentic RAG。检索描述：路由智能体把查询分派给多个检索智能体，各智能体分别调用向量搜索、网页搜索或邮件与聊天工具，最后聚合多源证据并返回回答。检索关键词：多智能体RAG, 路由智能体, 检索智能体, 向量搜索, 网页搜索, 邮件工具。

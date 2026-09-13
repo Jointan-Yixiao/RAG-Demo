@@ -1,0 +1,1 @@
+来源：langchain/retrieval.md（LangChain Retrieval Guide）；定位：原文出现顺序002，表01；图表主题：2-Step、Agentic与Hybrid RAG比较。检索描述：从描述、控制方式、灵活性、延迟和适用场景比较两步式RAG、智能体RAG与混合RAG，帮助在固定检索流程、动态工具决策和自校验工作流之间选型。检索关键词：2-Step RAG, Agentic RAG, Hybrid RAG, 控制, 灵活性, 延迟, 适用场景。
