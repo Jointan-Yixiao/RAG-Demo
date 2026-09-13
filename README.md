@@ -27,13 +27,42 @@
 
 ## 使用的模型
 
-| 用途 | 模型 | 运行位置 |
-|---|---|---|
-| 向量检索 | `Alibaba-NLP/gme-Qwen2-VL-2B-Instruct`（固定版本） | 本地 GPU |
-| 重排 | `BAAI/bge-reranker-v2-m3`（固定版本） | 本地 GPU |
-| 需求理解、生成回答 | DeepSeek `deepseek-flash`（OpenAI 兼容接口） | 远程 API，按量付费 |
+**默认运行组合：两份本地模型（GME + BGE）和一个远程模型接口（DeepSeek Flash）。** 模型权重不包含在 GitHub 仓库中，需要按下方安装步骤下载；远程模型需要用户自己的 API 密钥。
 
-固定的模型版本见 [`config/runtime.json`](config/runtime.json)，生成参数见 [`config/generation.deepseek-rag.json`](config/generation.deepseek-rag.json)。以上是本项目验证时使用的配置，模型服务后续的可用性和价格以提供方为准。
+| 环节 | 模型／准确标识 | 在本项目中负责什么 | 运行位置 |
+|---|---|---|---|
+| 问题理解与检索规划 | DeepSeek `deepseek-flash` | 判断正文／图表需求、识别指定资料、英译并生成结构化检索条件、对齐语料术语 | 远程 API，按量付费 |
+| 向量编码与召回 | `Alibaba-NLP/gme-Qwen2-VL-2B-Instruct` | 将正文、图表描述和检索请求编码为 1536 维向量，再进行相似度检索 | 本地 GPU |
+| 候选重排 | `BAAI/bge-reranker-v2-m3` | 根据问题与候选文本的相关性重新排序，筛选送入生成模型的证据 | 本地 GPU |
+| 图文答案生成 | DeepSeek `deepseek-flash` | 阅读检索到的正文、图表描述和对应原图，生成带引用的回答 | 远程 API，按量付费 |
+| 名次／索引读数复核 | 同一份配置中的 DeepSeek `deepseek-flash` | 仅在触发相关检查时追加调用，核对计数起点和换算；不覆盖全部事实 | 远程 API，仅触发时增加调用 |
+
+图表召回使用**图表描述的文本向量**，命中后通过元数据找到原图，再将原图送给生成模型。当前索引不保存单独的原图向量。BM25 是本地词法检索算法，用来补充向量召回，不需要另下载一份模型。
+
+### 固定版本与默认接口
+
+| 本地模型 | 固定的 Hugging Face revision |
+|---|---|
+| GME | `9cfa6413f704a7c1cf5064d240748e10c876b286` |
+| BGE v2 m3 | `953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e` |
+
+本地模型版本、向量维度和 BGE 文件校验信息以 [`config/runtime.json`](config/runtime.json) 为准。GME 使用 Hugging Face 缓存；标准安装将 BGE 放在 `models/bge-reranker-v2-m3`。运行时依次加载 GME 和 BGE，验证环境为 8 GB 显存。
+
+默认端到端流程读取 [`config/generation.deepseek-rag.json`](config/generation.deepseek-rag.json)：
+
+- API 基地址：`https://api.deepseek.com`；实际请求路径为 `/chat/completions`。
+- 实际发送的 `model` 字段：`deepseek-flash`。这里记录接口标识；服务端版本、可用性和价格以提供方为准。
+- 密钥变量：`DEEPSEEK_API_KEY`；可按安装说明在本机 `.env` 配置，或在网页设置中保存密钥。
+- 默认开启思考模式，`reasoning_effort=low`，`max_output_tokens=16384`。此值是单次请求的输出上限，不是整道问题的总 token 或费用上限。
+- 问题理解可能包含多次模型调用，之后还会生成答案，并可能触发名次复核；费用应统计完整流程。仓库另有 `generation.deepseek.json` 非思考模式配置，它不是端到端入口的默认配置。
+
+### 更换模型的范围
+
+网页设置页修改的 API 地址、模型和密钥，会应用于新问题的**问题理解、答案生成及按需复核**，不会切换本地 GME 或 BGE。其他 OpenAI 兼容服务需要同时支持当前流程使用的 JSON 对象输出和图片输入；现有端到端效果只验证过上述 DeepSeek 默认配置，不能由接口格式兼容推定其他模型效果相同。
+
+更换 GME 需要重新编码语料和查询，并适配向量维度与编码指令；更换 BGE 需要适配重排加载／打分代码并重新评测。当前网页不提供本地模型切换。
+
+Grok、Claude Code、Codex 用于开发和审查，不是默认 RAG 运行依赖。仓库中的部分 `_grok_*`、`_gemini_*` 文件保留历史名称或复用代码；按 README 启动当前默认流程，无需配置这些服务的账号或密钥。
 
 ## 资料（10 份）
 
@@ -80,7 +109,7 @@ py -3.12 -m venv .venv
 $env:RAG_BGE_MODEL_DIR = (Resolve-Path models\bge-reranker-v2-m3).Path
 ```
 
-GME 下载到 Hugging Face 缓存；BGE 的 6 个文件下载到 `models\bge-reranker-v2-m3` 并逐个核对哈希。**`RAG_BGE_MODEL_DIR` 只从当前进程环境读取，不读 `.env`；每开一个新的 PowerShell 窗口都要重新设置。**
+GME 下载到 Hugging Face 缓存；BGE 的 6 个文件下载到 `models\bge-reranker-v2-m3` 并逐个核对哈希。**命令行入口的 `RAG_BGE_MODEL_DIR` 只从当前进程环境读取，不读 `.env`；每开一个新的 PowerShell 窗口都要重新设置。网页启动器会自动识别上述标准模型目录。**
 
 ### 3. 从资料文本重建索引（不调用付费 API）
 
