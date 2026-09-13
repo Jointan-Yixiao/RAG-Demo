@@ -158,19 +158,28 @@ class ReleaseWhitelist(unittest.TestCase):
         for rel in ('.env', 'config/.env.local', '.venv/Lib/site.py', 'data/index/description-v1/body_vectors.npy',
                     'data/chunks/rag-guide.chunks.jsonl', 'models/bge/model.safetensors',
                     'data/metadata/retrieval-eval/experiment-40-e2e-repairs/costs.json',
-                    'scripts/__pycache__/x.pyc', 'secrets/api_key.txt'):
+                    'scripts/__pycache__/x.pyc', 'secrets/api_key.txt', 'data/ui/settings.json',
+                    'data/ui/jobs/abc/job.json'):
             self.assertIsNotNone(delivery.is_forbidden(rel), rel)
         for rel in ('.env.example', 'scripts/_rag_e2e.py', 'README.md',
                     'data/metadata/retrieval-eval/experiment-22-caption-dedup/claude_caption_dedup.py',
                     'data/metadata/retrieval-eval/experiment-41-final-delivery/release-inputs/visual-descriptions.jsonl'):
             self.assertIsNone(delivery.is_forbidden(rel), rel)
 
-    def test_planned_release_contains_no_pdf_html_index_or_results(self):
+    def test_planned_release_contains_no_source_html_pdf_index_or_results(self):
         planned = [rel for rel, _ in delivery.planned_files()]
         self.assertTrue(planned)
         for rel in planned:
-            self.assertFalse(rel.lower().endswith(('.pdf', '.html', '.npy', '.npz')), rel)
+            if rel != 'web/index.html':
+                self.assertFalse(rel.lower().endswith(('.pdf', '.html', '.npy', '.npz')), rel)
             self.assertIsNone(delivery.is_forbidden(rel), rel)
+
+    def test_workbench_assets_are_in_the_release(self):
+        planned = {rel for rel, _ in delivery.planned_files()}
+        for rel in ('scripts/_rag_web.py', 'scripts/_rag_web_worker.py',
+                    'scripts/_launch_workbench.py', 'web/index.html', 'web/app.js',
+                    'web/styles.css', 'tests/test_rag_web.py', '启动工作台.cmd', '停止工作台.cmd'):
+            self.assertIn(rel, planned)
 
     def test_every_catalog_markdown_and_referenced_image_is_planned(self):
         planned = {rel for rel, _ in delivery.planned_files()}

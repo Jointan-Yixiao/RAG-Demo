@@ -23,3 +23,6 @@ node_modules/
 *.log
 *.pem
 *.key
+
+# Local workbench settings, credentials, questions and run receipts
+data/ui/

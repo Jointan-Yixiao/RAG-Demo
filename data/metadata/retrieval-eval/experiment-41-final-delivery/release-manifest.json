@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-09-13T02:52:15.051595+00:00",
+  "created_at_utc": "2026-09-13T05:08:30.734678+00:00",
   "excluded_by_design": [
     ".env and any credential",
     ".venv / site-packages",
@@ -8,6 +8,7 @@
     "data/chunks (rebuilt instead)",
     "model weights (pinned download)",
     "experiment results and answers",
+    "local UI settings and question history",
     "PDF/HTML originals"
   ],
   "files": [
@@ -176,8 +177,8 @@
     {
       "path": "scripts/_prepare_delivery.py",
       "role": "code",
-      "bytes": 13755,
-      "sha256": "7df8e84dce05d2e13c8c82bf356f00268b374864f1fc1a2d7eff8006ff8ea053"
+      "bytes": 14200,
+      "sha256": "b14de7f14ce5e46ffbea7abafbf1f61eff7b0ee523533e59da0312d99d288b3b"
     },
     {
       "path": "scripts/_chunk_corpus.py",
@@ -190,6 +191,30 @@
       "role": "code",
       "bytes": 21496,
       "sha256": "b9e01281467ef08bd17d58e878a09605a2041544be96687433d9dd1a2f70a545"
+    },
+    {
+      "path": "scripts/_rag_web.py",
+      "role": "code",
+      "bytes": 31383,
+      "sha256": "daa1140c9eec5ece1fdbc97308bfd34d53f16087dcf99d5012936c3c9c79b158"
+    },
+    {
+      "path": "scripts/_rag_web_worker.py",
+      "role": "code",
+      "bytes": 1734,
+      "sha256": "90e89ca7347faccc97c4e0c773024cc23684de34e0d5db170fd95cd57e80dcfa"
+    },
+    {
+      "path": "scripts/_launch_workbench.py",
+      "role": "code",
+      "bytes": 2092,
+      "sha256": "ce1228852149a3a99e89f1f117cf4cc0c4c6ab1973222b27070b98f4d31bb46a"
+    },
+    {
+      "path": "scripts/_verify_workbench_http.py",
+      "role": "code",
+      "bytes": 3611,
+      "sha256": "df7ba46b4fbde822ba48cd1faa5423b6cb1fa029f7a9692ef13d586263494f30"
     },
     {
       "path": "scripts/_grok_concept_linker.mjs",
@@ -1280,14 +1305,14 @@
     {
       "path": "README.md",
       "role": "release-doc-or-test",
-      "bytes": 10132,
-      "sha256": "f234cfc4236130e6c24aa6948a28ec416a4e81f475119b8b5e75d4f36312f4d9"
+      "bytes": 11840,
+      "sha256": "72d56d7d8121e9111360ea04b01b8277abf9d9a9c0e9844501ef86c215317228"
     },
     {
       "path": ".gitignore",
       "role": "release-doc-or-test",
-      "bytes": 231,
-      "sha256": "bab10eb33763e684a5f0df91a40fb747e2bb98a2cee5ab2edeca62b588703623"
+      "bytes": 309,
+      "sha256": "7ce4b6ea5e21de2d080c4287d5eb354f3bb88a45a313582cd7f973c6d71860db"
     },
     {
       "path": ".env.example",
@@ -1340,8 +1365,56 @@
     {
       "path": "tests/test_runtime_delivery.py",
       "role": "release-doc-or-test",
-      "bytes": 14651,
-      "sha256": "86228c80dc9c1ce54bd8fc8063259956250388bd30f4e91234be13c428eb4f1d"
+      "bytes": 15212,
+      "sha256": "ac8d849a594ab8ddb5e034dd6c2afdc493d212a9adee92e22910b708c568c198"
+    },
+    {
+      "path": "tests/test_rag_web.py",
+      "role": "release-doc-or-test",
+      "bytes": 16432,
+      "sha256": "c79d8912bfbfd4c4f106cee2e860b46ce2bf0c354dfb30f942cd2fa0e69acbe7"
+    },
+    {
+      "path": "web/index.html",
+      "role": "release-doc-or-test",
+      "bytes": 12555,
+      "sha256": "95a29bf34edb48ea537b58c1c7e0314ad91436543f744cccb734b62c960ff543"
+    },
+    {
+      "path": "web/styles.css",
+      "role": "release-doc-or-test",
+      "bytes": 25110,
+      "sha256": "945bf1ac5d93908937ff6234d4fb6aff4bd3764cf40e69ae08c81464a506f747"
+    },
+    {
+      "path": "web/app.js",
+      "role": "release-doc-or-test",
+      "bytes": 65176,
+      "sha256": "c31e82746e6b65914274730277b690e08cb49818ddc2ab3a5ca051474e30f01a"
+    },
+    {
+      "path": "启动工作台.cmd",
+      "role": "release-doc-or-test",
+      "bytes": 251,
+      "sha256": "ea5fb5085602cf583e92b1fd4d59708523be9a95a254dedc3d061b4af4da1198"
+    },
+    {
+      "path": "停止工作台.cmd",
+      "role": "release-doc-or-test",
+      "bytes": 119,
+      "sha256": "6a611e3cef2a6f23bc0de8e0a958a421a7ae5800893af086a3f604458ec5df00"
+    },
+    {
+      "path": "doc/UI-frontend.md",
+      "role": "release-doc-or-test",
+      "bytes": 3975,
+      "sha256": "bea4bea03e11896f0a8266581c87fe10f3d65cef67de1ef2f36a93757e30bdaa"
+    },
+    {
+      "path": "doc/UI-本地工作台接入.md",
+      "role": "release-doc-or-test",
+      "bytes": 5646,
+      "sha256": "07a95f6038b3140a50fbb1351986c03c02bd28e82d74fa4e15ff1cd58e7f87de"
     },
     {
       "path": "doc/RAG-实时端到端运行说明.md",
@@ -1365,7 +1438,7 @@
   "missing": [],
   "refused": [],
   "counts": {
-    "files": 225,
-    "bytes": 15251921
+    "files": 237,
+    "bytes": 15422797
   }
 }

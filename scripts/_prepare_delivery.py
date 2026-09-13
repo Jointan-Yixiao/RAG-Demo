@@ -42,6 +42,7 @@ RUNTIME_PY = [
     # E41 rebuild path and the historical chunkers it runs in memory
     "_runtime_bundle.py", "_rebuild_runtime.py", "_prepare_delivery.py",
     "_chunk_corpus.py", "_migrate_chunks_v2.py",
+    "_rag_web.py", "_rag_web_worker.py", "_launch_workbench.py", "_verify_workbench_http.py",
 ]
 EXPERIMENT_CODE = [
     "data/metadata/retrieval-eval/experiment-16-overlap-split/build_split_index.py",
@@ -67,15 +68,17 @@ TOP_LEVEL = [
     "README.md", ".gitignore", ".env.example", "requirements-runtime.txt", "requirements-runtime-lock.txt",
     ".gitattributes", "SOURCES.md", "examples/questions.json",
     "doc/安装与复现.md", "doc/验证结果.md",
-    "tests/test_runtime_delivery.py",
+    "tests/test_runtime_delivery.py", "tests/test_rag_web.py",
+    "web/index.html", "web/styles.css", "web/app.js",
+    "启动工作台.cmd", "停止工作台.cmd", "doc/UI-frontend.md", "doc/UI-本地工作台接入.md",
     "doc/RAG-实时端到端运行说明.md", "doc/E40-端到端修复与全量回归.md",
     "doc/WO-008-E40端到端完整性与稳定性遗留.md",
 ]
 #: Created by the user or by the documented steps inside a release tree; never shipped.
-LOCAL_ONLY_DIRS = {".venv", "data/runtime", "models", "runs", ".git"}
+LOCAL_ONLY_DIRS = {".venv", "data/runtime", "data/ui", "models", "runs", ".git"}
 LOCAL_ONLY_FILES = {".env", ".git"}
 FORBIDDEN_PARTS = {".venv", "__pycache__", "node_modules", ".git"}
-FORBIDDEN_PREFIXES = ("data/index/", "data/chunks/", "data/runtime/", "models/")
+FORBIDDEN_PREFIXES = ("data/index/", "data/chunks/", "data/runtime/", "data/ui/", "models/")
 FORBIDDEN_NAME_RE = re.compile(r"(^\.env$|\.env\.(?!example$)|secret|credential|api[-_]?key|\.pem$|\.key$)", re.I)
 IMG_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 
@@ -159,7 +162,7 @@ def build_manifest(repo: Path = REPO) -> dict:
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "excluded_by_design": [".env and any credential", ".venv / site-packages", "data/index (old vectors)",
                                "data/chunks (rebuilt instead)", "model weights (pinned download)",
-                               "experiment results and answers", "PDF/HTML originals"],
+                               "experiment results and answers", "local UI settings and question history", "PDF/HTML originals"],
         "files": files,
         "missing": missing,
         "refused": refused,
@@ -206,7 +209,8 @@ def cmd_export(args) -> int:
 
 
 RUNTIME_IMPORTS = ["_rag_e2e", "_rebuild_runtime", "_runtime_bundle", "_hybrid_retrieval",
-                   "_answer_semantics", "_chunk_corpus", "_migrate_chunks_v2", "_user_response"]
+                   "_answer_semantics", "_chunk_corpus", "_migrate_chunks_v2", "_user_response",
+                   "_rag_web", "_rag_web_worker", "_launch_workbench"]
 
 
 def cmd_check(args) -> int:
@@ -249,7 +253,7 @@ def cmd_check(args) -> int:
     else:
         version = subprocess.run([node, "--version"], capture_output=True, text=True).stdout.strip()
         node_rows.append({"node": version})
-        for mjs in sorted((root / "scripts").glob("*.mjs")):
+        for mjs in sorted((root / "scripts").glob("*.mjs")) + [root / "web/app.js"]:
             res = subprocess.run([node, "--check", str(mjs)], capture_output=True, text=True)
             if res.returncode != 0:
                 problems.append({"path": mjs.relative_to(root).as_posix(),

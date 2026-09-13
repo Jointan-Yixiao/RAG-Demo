@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>资料问答工作台</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div id="health-banner" class="health-banner" role="status" hidden></div>
+
+  <!-- 主界面：历史问题 + 回答 -->
+  <section id="view-main" class="view layout" data-view="main" hidden>
+    <aside class="sidebar" id="history-sidebar" aria-label="历史问题">
+      <div class="sidebar-head">
+        <h1 class="sidebar-title">历史问题</h1>
+        <span class="count" id="history-count">00</span>
+        <button type="button" class="text-btn new-question" id="new-question-btn" title="开始一个新问题">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg>
+          <span>新问题</span>
+        </button>
+      </div>
+      <div class="divider"></div>
+      <div class="history-scroll">
+        <ul class="history-list" id="history-list"></ul>
+        <div class="side-state" id="history-state" hidden></div>
+      </div>
+      <div class="sidebar-foot">
+        <div class="divider"></div>
+        <button type="button" class="nav-card" id="open-evidence-btn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h14v15H4z M8 8h14v15H8"/></svg>
+          <span>引用来源 / 证据层</span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+        <button type="button" class="nav-card" id="open-settings-btn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5l1.6 2.6 3-.6.9 2.9 2.9.9-.6 3 2.6 1.7-2.6 1.6.6 3-2.9.9-.9 2.9-3-.6L12 21.5l-1.6-2.6-3 .6-.9-2.9-2.9-.9.6-3L1.6 11l2.6-1.7-.6-3 2.9-.9.9-2.9 3 .6z"/></svg>
+          <span>设置</span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </aside>
+    <div class="scrim" id="history-scrim" hidden></div>
+
+    <main class="content main-content">
+      <div class="mobile-bar">
+        <button type="button" class="icon-btn" id="toggle-history-btn" aria-controls="history-sidebar" aria-expanded="false" aria-label="打开历史问题">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <span class="mobile-title">资料问答</span>
+      </div>
+      <div class="answer-scroll" id="answer-scroll">
+        <article class="answer" id="answer" aria-live="polite"></article>
+      </div>
+      <form class="composer" id="composer" novalidate>
+        <label class="sr-only" for="question-input">输入你的问题</label>
+        <textarea id="question-input" rows="2" placeholder="输入你的问题…" maxlength="2000" autocomplete="off"></textarea>
+        <div class="composer-foot">
+          <span class="composer-hint" id="composer-hint">默认检索全部资料 · Enter 发送，Shift+Enter 换行</span>
+          <button type="submit" class="send-btn" id="send-btn" aria-label="发送问题">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </button>
+        </div>
+      </form>
+    </main>
+  </section>
+
+  <!-- 证据层 -->
+  <section id="view-evidence" class="view layout" data-view="evidence" hidden>
+    <aside class="sidebar evidence-sidebar" aria-label="证据列表">
+      <a class="back-btn" href="#/" id="evidence-back">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6l-6 6 6 6M5 12h15"/></svg>
+        <span>返回问答</span>
+      </a>
+      <h1 class="sidebar-title evidence-title">引用来源 / 证据层</h1>
+      <p class="sidebar-sub" id="evidence-summary"></p>
+      <div class="divider"></div>
+      <div class="evidence-nav" id="evidence-nav"></div>
+      <div class="sidebar-foot notes">
+        <div class="divider"></div>
+        <p>这里查看当前回答的依据。</p>
+        <p>切换问题，请返回问答页。</p>
+      </div>
+    </aside>
+    <main class="content evidence-content">
+      <div class="evidence-inner">
+        <p class="eyebrow">当前问题</p>
+        <h2 class="current-question" id="evidence-question"></h2>
+        <div class="divider wide"></div>
+        <div id="evidence-detail" aria-live="polite"></div>
+      </div>
+    </main>
+  </section>
+
+  <!-- 设置页 -->
+  <section id="view-settings" class="view layout" data-view="settings" hidden>
+    <aside class="sidebar settings-sidebar" aria-label="设置导航">
+      <a class="back-btn" href="#/" id="settings-back">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6l-6 6 6 6M5 12h15"/></svg>
+        <span>返回问答</span>
+      </a>
+      <h1 class="sidebar-title settings-title">设置</h1>
+      <p class="sidebar-sub">管理你的问答工作台</p>
+      <div class="divider"></div>
+      <nav class="settings-nav" id="settings-nav">
+        <a href="#section-model" data-section="section-model" class="active">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4"/></svg>
+          <span>模型接口</span>
+        </a>
+        <a href="#section-docs" data-section="section-docs">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h7l2 2h9v11H3z"/></svg>
+          <span>资料管理</span>
+        </a>
+        <a href="#section-prefs" data-section="section-prefs">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h11M4 17h7"/></svg>
+          <span>回答偏好</span>
+        </a>
+      </nav>
+      <div class="sidebar-foot notes">
+        <div class="divider"></div>
+        <p>设置用于之后的新提问。</p>
+        <p>已有回答可继续在历史中查看。</p>
+      </div>
+    </aside>
+    <main class="content settings-content" id="settings-scroll">
+      <form class="settings-form" id="settings-form" novalidate autocomplete="off">
+        <header class="settings-head">
+          <h2>设置</h2>
+          <p>配置模型、资料与回答方式。</p>
+        </header>
+        <div class="side-state" id="settings-state" hidden></div>
+
+        <section class="settings-section" id="section-model" aria-labelledby="h-model">
+          <div class="section-head">
+            <h3 id="h-model">模型接口</h3>
+            <span>用于理解问题与生成回答</span>
+          </div>
+          <div class="card">
+            <div class="grid-2">
+              <div class="field">
+                <label for="set-provider">接口类型</label>
+                <div class="select-wrap">
+                  <select id="set-provider" name="provider">
+                    <option value="openai-compatible">OpenAI 兼容接口</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="set-model">模型名称</label>
+                <input id="set-model" name="model" type="text" spellcheck="false" autocomplete="off" placeholder="例如 deepseek-chat">
+              </div>
+              <div class="field">
+                <label for="set-base-url">接口地址</label>
+                <input id="set-base-url" name="base_url" type="url" spellcheck="false" autocomplete="off" placeholder="https://">
+                <p class="help">填写服务商提供的接口地址与模型名称。</p>
+              </div>
+              <div class="field">
+                <label for="set-api-key">API 密钥</label>
+                <input id="set-api-key" name="api_key" type="password" spellcheck="false" autocomplete="new-password" placeholder="输入 API Key">
+                <p class="help" id="key-help">密钥输入后以隐藏字符显示。</p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="test-row">
+              <p class="test-status" id="test-status" data-state="idle" aria-live="polite"><span class="dot"></span><span class="test-text">尚未测试连接</span></p>
+              <button type="button" class="btn" id="test-btn">测试连接</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="settings-section" id="section-docs" aria-labelledby="h-docs">
+          <div class="section-head"><h3 id="h-docs">资料管理</h3></div>
+          <div class="card row-card">
+            <div class="doc-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z M14 3v4h4 M9 12h6M9 15h6M9 18h4"/></svg>
+            </div>
+            <div class="row-text">
+              <strong>本地资料库</strong>
+              <span>默认检索全部资料</span>
+            </div>
+            <button type="button" class="btn" id="open-docs-btn">查看资料</button>
+          </div>
+        </section>
+
+        <section class="settings-section" id="section-prefs" aria-labelledby="h-prefs">
+          <div class="section-head"><h3 id="h-prefs">回答偏好</h3></div>
+          <div class="card">
+            <div class="grid-2 prefs">
+              <div class="field inline">
+                <label for="set-language">回答语言</label>
+                <div class="select-wrap">
+                  <select id="set-language" name="language">
+                    <option value="auto">跟随提问语言</option>
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                  </select>
+                </div>
+              </div>
+              <fieldset class="field inline">
+                <legend>详细程度</legend>
+                <div class="segmented" role="radiogroup">
+                  <label><input type="radio" name="detail" value="concise"><span>简洁</span></label>
+                  <label><input type="radio" name="detail" value="balanced"><span>适中</span></label>
+                  <label><input type="radio" name="detail" value="detailed"><span>详细</span></label>
+                </div>
+              </fieldset>
+            </div>
+            <p class="help">调整回答的表达方式，引用来源仍在证据层查看。</p>
+          </div>
+        </section>
+
+        <footer class="settings-foot">
+          <p class="save-feedback" id="save-feedback" aria-live="polite">保存后，从下次提问开始生效。</p>
+          <div class="actions">
+            <button type="button" class="btn" id="cancel-btn">取消</button>
+            <button type="submit" class="btn primary" id="save-btn">保存设置</button>
+          </div>
+        </footer>
+      </form>
+    </main>
+  </section>
+
+  <!-- 资料查看（只读） -->
+  <dialog class="modal docs-modal" id="docs-dialog" aria-labelledby="docs-title">
+    <div class="modal-head">
+      <button type="button" class="icon-btn" id="docs-back-btn" aria-label="返回资料列表" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6l-6 6 6 6M5 12h15"/></svg>
+      </button>
+      <h2 id="docs-title">本地资料库</h2>
+      <button type="button" class="icon-btn" data-close aria-label="关闭">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <p class="modal-sub" id="docs-sub">只读查看。当前版本不支持在界面中添加或删除资料。</p>
+    <div class="modal-body" id="docs-body"></div>
+  </dialog>
+
+  <!-- 大图 -->
+  <dialog class="modal image-modal" id="image-dialog" aria-labelledby="image-title">
+    <div class="modal-head">
+      <h2 id="image-title">原始图表</h2>
+      <button type="button" class="icon-btn" data-close aria-label="关闭">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body image-body"><img id="image-full" alt=""></div>
+  </dialog>
+
+  <!-- 确认 -->
+  <dialog class="modal confirm-modal" id="confirm-dialog" aria-labelledby="confirm-title">
+    <form method="dialog">
+      <h2 id="confirm-title">放弃未保存的修改？</h2>
+      <p id="confirm-text">设置有尚未保存的修改，离开后这些修改会丢失。</p>
+      <div class="actions">
+        <button type="submit" class="btn" value="cancel">继续编辑</button>
+        <button type="submit" class="btn primary" value="ok">放弃修改</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
